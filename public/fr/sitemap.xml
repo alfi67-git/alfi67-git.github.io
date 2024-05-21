@@ -2,96 +2,96 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>//afidalgo.fr/</loc>
+        <loc>//localhost:1313/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/"
+          href="//localhost:1313/en/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/"
+          href="//localhost:1313/"
         />
       </url><url>
-        <loc>//afidalgo.fr/tags/hello-world/</loc>
+        <loc>//localhost:1313/tags/hello-world/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/tags/hello-world/"
+          href="//localhost:1313/en/tags/hello-world/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/tags/hello-world/"
+          href="//localhost:1313/tags/hello-world/"
         />
       </url><url>
-        <loc>//afidalgo.fr/posts/premier-post/</loc>
+        <loc>//localhost:1313/posts/premier-post/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
       </url><url>
-        <loc>//afidalgo.fr/posts/</loc>
-        <lastmod>2024-05-20T18:00:24+02:00</lastmod>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//afidalgo.fr/en/posts/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="//afidalgo.fr/posts/"
-        />
-      </url><url>
-        <loc>//afidalgo.fr/tags/</loc>
+        <loc>//localhost:1313/posts/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/tags/"
+          href="//localhost:1313/en/posts/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/tags/"
+          href="//localhost:1313/posts/"
         />
       </url><url>
-        <loc>//afidalgo.fr/about/</loc>
+        <loc>//localhost:1313/tags/</loc>
+        <lastmod>2024-05-20T18:00:24+02:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/en/tags/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="fr"
+          href="//localhost:1313/tags/"
+        />
+      </url><url>
+        <loc>//localhost:1313/about/</loc>
         <lastmod>2024-05-20T18:00:01+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/about/"
+          href="//localhost:1313/en/about/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/about/"
+          href="//localhost:1313/about/"
         />
       </url><url>
-        <loc>//afidalgo.fr/authors/</loc>
+        <loc>//localhost:1313/authors/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/authors/"
+          href="//localhost:1313/en/authors/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/authors/"
+          href="//localhost:1313/authors/"
         />
       </url><url>
-        <loc>//afidalgo.fr/categories/</loc>
+        <loc>//localhost:1313/categories/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//afidalgo.fr/en/categories/"
+          href="//localhost:1313/en/categories/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//afidalgo.fr/categories/"
+          href="//localhost:1313/categories/"
         />
       </url>
 </urlset>

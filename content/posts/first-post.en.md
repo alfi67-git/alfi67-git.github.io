@@ -10,6 +10,6 @@ tags = [
 aliases = ["posts"]
 +++
 
-The first article of the site ! 😄
+The first article of the site ! 😄 
 
 Hello to you reading this, well you don't have much to read atm because it's the first article of the website, but much more will come.
