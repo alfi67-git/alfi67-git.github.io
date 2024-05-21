@@ -1,0 +1,95 @@
+baseURL = '//afidalgo.fr/'
+languageCode = 'fr'
+defaultContentLanguage = "fr"
+title = 'Alex Lab'
+theme = 'anubis2'
+paginate = 5
+enableEmoji = true
+
+[author]
+name = "Alex FIDALGO"
+
+[params]
+description = "Un site personnel où sont postés différents projets"
+dateFormat = "2006-01-02"
+paginationSinglePost = true
+
+colorTheme = "auto"
+colorThemeSwitcher = true
+
+readMore = true
+readNextPosts = 3
+copyCodeButton = true
+rssAsSocialIcon = true
+locale = "fr"
+math = false # true: enable mathjax globally (default is false)
+toc = true
+
+social = [
+    { id = "github", url = "https://github.com/Alfi67-git" },
+    { id = "linkedin", url = "https://www.linkedin.com/in/alexandre-fidalgo" },
+    { id = "email", url = "a.fidalgo.contact@gmail.com" },
+]
+
+[[menu.main]]
+identifier = "home"
+name = "ACCUEIL"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "about"
+name = "À PROPOS"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "TAGS"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+identifier = "archive"
+name = "ARCHIVES"
+url = "/posts/"
+weight = 4
+
+[languages]
+[languages.fr]
+languageName = "Français"
+
+[languages.en]
+languageName = "English"
+
+[languages.en.params]
+languageCode = "en-us"
+
+[[languages.en.menu.main]]
+identifier = "home"
+name = "HOME"
+url = "/"
+weight = 1
+
+[[languages.en.menu.main]]
+identifier = "about"
+name = "ABOUT"
+url = "/about/"
+weight = 2
+
+[[languages.en.menu.main]]
+identifier = "tags"
+name = "TAGS"
+url = "/tags/"
+weight = 3
+
+[[languages.en.menu.main]]
+identifier = "archive"
+name = "ARCHIVES"
+url = "/posts/"
+weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "authors"

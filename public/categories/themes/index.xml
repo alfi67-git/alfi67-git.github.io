@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Themes on Alex Lab</title>
+    <link>/categories/themes/</link>
+    <description>Alex Lab (Themes)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 20 May 2024 18:00:24 +0200</lastBuildDate>
+    
+    <atom:link href="/categories/themes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Premier Post</title>
+      <link>/posts/premier-post/</link>
+      <pubDate>Mon, 20 May 2024 18:00:24 +0200</pubDate>
+      
+      <guid>/posts/premier-post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
