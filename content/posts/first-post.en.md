@@ -1,6 +1,6 @@
 +++
 author = "Alex"
-title = 'Hello world 👋'
+title = '👋 Hello world'
 date = 2024-05-20T18:00:13+02:00
 draft = false
 description = "description de la page"

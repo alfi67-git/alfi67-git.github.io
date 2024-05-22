@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
         <loc>//localhost:1313/en/</loc>
-        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
+        <lastmod>2024-05-22T15:28:39+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
@@ -14,6 +14,22 @@
           hreflang="en"
           href="//localhost:1313/en/"
         />
+      </url><url>
+        <loc>//localhost:1313/en/posts/</loc>
+        <lastmod>2024-05-22T15:28:39+02:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="fr"
+          href="//localhost:1313/posts/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="//localhost:1313/en/posts/"
+        />
+      </url><url>
+        <loc>//localhost:1313/en/posts/first-post/</loc>
+        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
       </url><url>
         <loc>//localhost:1313/en/tags/hello-world/</loc>
         <lastmod>2024-05-20T18:00:13+02:00</lastmod>
@@ -26,22 +42,6 @@
           rel="alternate"
           hreflang="en"
           href="//localhost:1313/en/tags/hello-world/"
-        />
-      </url><url>
-        <loc>//localhost:1313/en/posts/first-post/</loc>
-        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
-      </url><url>
-        <loc>//localhost:1313/en/posts/</loc>
-        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
-        <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="//localhost:1313/posts/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="//localhost:1313/en/posts/"
         />
       </url><url>
         <loc>//localhost:1313/en/tags/</loc>

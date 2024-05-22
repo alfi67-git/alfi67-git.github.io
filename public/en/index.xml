@@ -6,13 +6,13 @@
     <description>Alex Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 May 2024 18:00:13 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2024 15:28:39 +0200</lastBuildDate>
     
     <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello world 👋</title>
+      <title>👋 Hello world</title>
       <link>/en/posts/first-post/</link>
       <pubDate>Mon, 20 May 2024 18:00:13 +0200</pubDate>
       

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Alex Lab</title>
-    <link>/posts/</link>
-    <description>Alex Lab (Posts)</description>
+    <title>Github on Alex Lab</title>
+    <link>/tags/github/</link>
+    <description>Alex Lab (Github)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <lastBuildDate>Wed, 22 May 2024 15:28:18 +0200</lastBuildDate>
     
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,17 +19,6 @@
       <guid>/posts/host_github/h%C3%A9berger-son-site-sur-github/</guid>
       <description>&lt;p&gt;Vous avez un site web et vous souahitez le publier et montrer au monde vos travaux, cependant vous n&amp;rsquo;avez pas ou très peu d&amp;rsquo;argent.&lt;/p&gt;
 &lt;p&gt;Il existe une solution pour héberger votre site web gratuitement avec GitHub, c&amp;rsquo;est ce que nous allons apprendre à faire dans ce tutoriel.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>👋 Hello world</title>
-      <link>/posts/premier-post/</link>
-      <pubDate>Mon, 20 May 2024 18:00:24 +0200</pubDate>
-      
-      <guid>/posts/premier-post/</guid>
-      <description>&lt;p&gt;Le tout premier article du site ! 😄&lt;/p&gt;
-&lt;p&gt;Bonjour à toi qui lis ça, t&amp;rsquo;auras pas grand-chose à lire pour le moment puisque ceci n&amp;rsquo;est que le tout premier article du site, mais d&amp;rsquo;autres sont à prévoir.&lt;/p&gt;
 </description>
     </item>
     
