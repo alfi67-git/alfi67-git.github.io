@@ -1,4 +1,4 @@
-baseURL = '//afidalgo.fr/'
+baseURL = 'https://afidalgo.fr/'
 languageCode = 'fr'
 defaultContentLanguage = "fr"
 title = 'Alex Lab'
