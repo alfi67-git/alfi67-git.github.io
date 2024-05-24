@@ -24,7 +24,7 @@ Dans un premier temps, rendez vous sur Github et et au niveau de votre photo de 
 
 ![new-repo](/posts/host-github/new-repo.png)
 
-Une nouvelle page appareit ensuite, donner un nom à votre repo, et faite en sorte qu'il soit *public*. Vous pouvez donner une description à votre repository, mais ça n'est pas obligatoire.
+Une nouvelle page appareit ensuite, votre repo doit avoir le nom *username*.github.io, faite également en sorte qu'il soit *public*. Vous pouvez donner une description à votre repository, mais ça n'est pas obligatoire.
 
 ![name-repo](/posts/host-github/name-repo.png)
 
@@ -32,3 +32,27 @@ Une nouvelle page appareit ensuite, donner un nom à votre repo, et faite en sor
 
 ## Mise en ligne du site
 
+Une fois votre repo créé et vos fichier uploadés, il est temps de publier votre site.
+
+Dans les paramètres, rendez vous dans la partie *pages*.
+
+![pages-github](/posts/host-github/settings-repo.png)
+
+Dans la partie **Build and deployment** sélectionnez la *Source*, qui est: 
+
+- soit *GitHub Actions* 
+- soit *Deploy from a branch*
+
+À vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la la deuxième option.
+
+Sélectionnez également la *Branch* de votre repo et sauvegardez. Dans quelques instant un message vous disant que votre site est publié devrait apparaitre.
+
+![site-published](/posts/host-github/site_published.png)
+
+Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !
+
+
+## Nom de domaine personnalisé
+
+Votre site est publié c'est très chouette, mais vous n'êtes pas très satisfait du nom de domaine par défault donné par GitHub. Pas de panique vous pouvez le changer, et ceci très facilement !
+Moyennant l'achat du nom de domaine vous pourrez rediriger 

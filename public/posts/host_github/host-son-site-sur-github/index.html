@@ -405,25 +405,6 @@
             <header>
                 <h1 class="p-name post-title">🌐 Héberger son site gratuitement sur GitHub</h1>
                 
-    
-    <span>
-        <ul class="post-translations">
-            
-                
-                    <li>
-                        <a href="/en/posts/host_github/host-son-site-sur-github/">EN</a>
-                    </li>
-                
-            
-                
-                    <li>
-                        FR
-                    </li>
-                
-            
-        </ul>
-    </span>
-
 
             </header>
             
@@ -486,6 +467,7 @@
   <ul>
     <li><a href="#mise-en-place-du-repository">Mise en place du repository</a></li>
     <li><a href="#mise-en-ligne-du-site">Mise en ligne du site</a></li>
+    <li><a href="#nom-de-domaine-personnalisé">Nom de domaine personnalisé</a></li>
   </ul>
 </nav></div>
   </details>
@@ -524,7 +506,7 @@
 </h2>
 <p>Dans un premier temps, rendez vous sur Github et et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.</p>
 <p><img alt="new-repo" src="/posts/host-github/new-repo.png"></p>
-<p>Une nouvelle page appareit ensuite, donner un nom à votre repo, et faite en sorte qu&rsquo;il soit <em>public</em>. Vous pouvez donner une description à votre repository, mais ça n&rsquo;est pas obligatoire.</p>
+<p>Une nouvelle page appareit ensuite, votre repo doit avoir le nom <em>username</em>.github.io, faite également en sorte qu&rsquo;il soit <em>public</em>. Vous pouvez donner une description à votre repository, mais ça n&rsquo;est pas obligatoire.</p>
 <p><img alt="name-repo" src="/posts/host-github/name-repo.png"></p>
 <p>À présent, il faut push votre dossier sur lequel vous avez durement travaillé.</p>
 <h2 id="mise-en-ligne-du-site" >
@@ -535,6 +517,28 @@
     Mise en ligne du site
 </div>
 </h2>
+<p>Une fois votre repo créé et vos fichier uploadés, il est temps de publier votre site.</p>
+<p>Dans les paramètres, rendez vous dans la partie <em>pages</em>.</p>
+<p><img alt="pages-github" src="/posts/host-github/settings-repo.png"></p>
+<p>Dans la partie <strong>Build and deployment</strong> sélectionnez la <em>Source</em>, qui est:</p>
+<ul>
+<li>soit <em>GitHub Actions</em></li>
+<li>soit <em>Deploy from a branch</em></li>
+</ul>
+<p>À vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la la deuxième option.</p>
+<p>Sélectionnez également la <em>Branch</em> de votre repo et sauvegardez. Dans quelques instant un message vous disant que votre site est publié devrait apparaitre.</p>
+<p><img alt="site-published" src="/posts/host-github/site_published.png"></p>
+<p>Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !</p>
+<h2 id="nom-de-domaine-personnalisé" >
+<div>
+    <a href="#nom-de-domaine-personnalis%c3%a9">
+        #
+    </a>
+    Nom de domaine personnalisé
+</div>
+</h2>
+<p>Votre site est publié c&rsquo;est très chouette, mais vous n&rsquo;êtes pas très satisfait du nom de domaine par défault donné par GitHub. Pas de panique vous pouvez le changer, et ceci très facilement !
+Moyennant l&rsquo;achat du nom de domaine vous pourrez rediriger</p>
         </div>
 
     </article>
@@ -596,6 +600,8 @@
     
     
     
+        
+    
 
     
         
@@ -603,7 +609,7 @@
         
     
         
-            <li><a href="/en/posts/host_github/host-son-site-sur-github/">English</a></li>
+            <li><a href="/en/">English</a></li>
         
     
 </ul>

@@ -29,7 +29,7 @@
 &lt;/h2&gt;
 &lt;p&gt;Dans un premier temps, rendez vous sur Github et et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;http://localhost:1313/posts/host-github/new-repo.png&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Une nouvelle page appareit ensuite, donner un nom à votre repo, et faite en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
+&lt;p&gt;Une nouvelle page appareit ensuite, votre repo doit avoir le nom &lt;em&gt;username&lt;/em&gt;.github.io, faite également en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;http://localhost:1313/posts/host-github/name-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;À présent, il faut push votre dossier sur lequel vous avez durement travaillé.&lt;/p&gt;
 &lt;h2 id=&#34;mise-en-ligne-du-site&#34; &gt;
@@ -39,7 +39,11 @@
     &lt;/a&gt;
     Mise en ligne du site
 &lt;/div&gt;
-&lt;/h2&gt;</description>
+&lt;/h2&gt;
+&lt;p&gt;Une fois votre repo créer et vos fichier uploadés, il est temps de publier votre site.&lt;/p&gt;
+&lt;p&gt;Dans les paramètres, rendez vous dans la partie &lt;em&gt;pages&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;http://localhost:1313/posts/host-github/git-pages.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dans la partie &lt;strong&gt;Build and deployment&lt;/strong&gt; sélectionnez la &lt;em&gt;Source&lt;/em&gt;, qui est, soit &lt;em&gt;GitHub Actions&lt;/em&gt; soit &lt;em&gt;Deploy from a branch&lt;/em&gt;, à vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la la deuxième option.&lt;/p&gt;</description>
     </item>
     
   </channel>
