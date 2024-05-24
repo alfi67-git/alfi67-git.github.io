@@ -1,17 +1,17 @@
 baseURL = 'https://afidalgo.fr/'
 languageCode = 'fr'
 defaultContentLanguage = "fr"
-title = 'Alex Lab'
+title = 'Alfi Lab'
 theme = 'anubis2'
 paginate = 5
 enableEmoji = true
 
 [author]
-name = "Alex FIDALGO"
+name = "Alfi"
 
 [params]
 description = "Un site personnel où sont postés différents projets"
-dateFormat = "2006-01-02"
+dateFormat = "2 Jan 2006"
 paginationSinglePost = true
 
 colorTheme = "auto"
@@ -28,7 +28,7 @@ toc = true
 social = [
     { id = "github", url = "https://github.com/Alfi67-git" },
     { id = "linkedin", url = "https://www.linkedin.com/in/alexandre-fidalgo" },
-    { id = "email", url = "a.fidalgo.contact@gmail.com" },
+    { id = "email", url = "mailto:a.fidalgo.contact@gmail.com" },
 ]
 
 [[menu.main]]
@@ -58,9 +58,13 @@ weight = 4
 [languages]
 [languages.fr]
 languageName = "Français"
+title = "Lab d'Alfi"
+weight = 1
 
 [languages.en]
 languageName = "English"
+title = "Alfi's Lab"
+weight = 2
 
 [languages.en.params]
 languageCode = "en-us"
@@ -93,3 +97,12 @@ weight = 4
 category = "categories"
 tag = "tags"
 author = "authors"
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.goldmark.renderer]
+unsafe = true # true | false; Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = 'base16-snazzy' # Highlight.js style

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alex Lab</title>
+    <title>Alfi&#39;s Lab</title>
     <link>/en/</link>
-    <description>Alex Lab</description>
+    <description>Alfi&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 May 2024 15:28:39 +0200</lastBuildDate>
@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>👋 Hello world</title>
+      <title>👋 Hello World</title>
       <link>/en/posts/first-post/</link>
       <pubDate>Mon, 20 May 2024 18:00:13 +0200</pubDate>
       
       <guid>/en/posts/first-post/</guid>
       <description>&lt;p&gt;The first article of the site ! 😄&lt;/p&gt;
 &lt;p&gt;Hello to you reading this, well you don&amp;rsquo;t have much to read atm because it&amp;rsquo;s the first article of the website, but much more will come.&lt;/p&gt;
-</description>
+&lt;p&gt;I think i&amp;rsquo;ll share my projects, some tutorials, my discovery or how my learning on some things is going..&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
     &lt;em&gt;What is this site about&lt;/em&gt;
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;All my projects I actually work on.&lt;/p&gt;
+&lt;p&gt;All my projects I actually work on. And maybe some more, I still don&amp;rsquo;t what what the content are gonna be, but things can still change 😊.&lt;/p&gt;
 &lt;h2 id=&#34;what-project-are-you-working-on-&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#what-project-are-you-working-on-&#34;&gt;

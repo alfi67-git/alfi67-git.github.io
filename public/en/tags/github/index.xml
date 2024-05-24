@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Github on Alfi&#39;s Lab</title>
+    <link>/en/tags/github/</link>
+    <description>Alfi&#39;s Lab (Github)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 22 May 2024 15:28:39 +0200</lastBuildDate>
+    
+    <atom:link href="/en/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>🌐 Host Your Website on GitHub</title>
+      <link>/en/posts/host_github/host-son-site-sur-github/</link>
+      <pubDate>Wed, 22 May 2024 15:28:39 +0200</pubDate>
+      
+      <guid>/en/posts/host_github/host-son-site-sur-github/</guid>
+      <description>&lt;p&gt;Vous avez un site web et vous souahitez le publier et montrer au monde vos travaux, cependant vous n&amp;rsquo;avez pas ou très peu d&amp;rsquo;argent.&lt;/p&gt;
+&lt;p&gt;Il existe une solution pour héberger votre site web gratuitement avec GitHub, c&amp;rsquo;est ce que nous allons apprendre à faire dans ce tutoriel.&lt;/p&gt;
+&lt;h2 id=&#34;mise-en-place-du-repository&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#mise-en-place-du-repository&#34;&gt;
+        #
+    &lt;/a&gt;
+    Mise en place du repository
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans un premier temps, rendez vous sur Github et et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;http://localhost:1313/posts/host-github/new-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Une nouvelle page appareit ensuite, donner un nom à votre repo, et faite en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;http://localhost:1313/posts/host-github/name-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;À présent, il faut push votre dossier sur lequel vous avez durement travaillé.&lt;/p&gt;
+&lt;h2 id=&#34;mise-en-ligne-du-site&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#mise-en-ligne-du-site&#34;&gt;
+        #
+    &lt;/a&gt;
+    Mise en ligne du site
+&lt;/div&gt;
+&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

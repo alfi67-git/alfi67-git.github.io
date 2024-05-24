@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>//localhost:1313/fr/sitemap.xml</loc>
+    <loc>https://afidalgo.fr/fr/sitemap.xml</loc>
     
       <lastmod>2024-05-22T15:28:18+02:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>//localhost:1313/en/sitemap.xml</loc>
+    <loc>https://afidalgo.fr/en/sitemap.xml</loc>
     
       <lastmod>2024-05-22T15:28:39+02:00</lastmod>
     

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Alex Lab</title>
+    <title>Lab d&#39;Alfi</title>
     <link>/</link>
-    <description>Alex Lab</description>
+    <description>Lab d&#39;Alfi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
     <lastBuildDate>Wed, 22 May 2024 15:28:18 +0200</lastBuildDate>
@@ -12,14 +12,14 @@
     
     
     <item>
-      <title>👋 Hello world</title>
-      <link>/posts/premier-post/</link>
+      <title>👋 Hello World</title>
+      <link>/posts/first-post/</link>
       <pubDate>Mon, 20 May 2024 18:00:24 +0200</pubDate>
       
-      <guid>/posts/premier-post/</guid>
-      <description>&lt;p&gt;Le tout premier article du site ! 😄&lt;/p&gt;
+      <guid>/posts/first-post/</guid>
+      <description>&lt;p&gt;Le tout premier article du site 😄 !&lt;/p&gt;
 &lt;p&gt;Bonjour à toi qui lis ça, t&amp;rsquo;auras pas grand-chose à lire pour le moment puisque ceci n&amp;rsquo;est que le tout premier article du site, mais d&amp;rsquo;autres sont à prévoir.&lt;/p&gt;
-</description>
+&lt;p&gt;Je pense que je partagerais mes projets, des petits tutos, mes découvertes ou l&amp;rsquo;avancement de mon apprentissage sur diverse choses..&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +38,7 @@
     &lt;em&gt;Il y aura quoi sur ce site ?&lt;/em&gt;
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;À peu près tous mes projet sur lesquels je bosse actuellement. Et peut-être d&amp;rsquo;autre chose, je ne sais pas encore quel sera le contenu, mais les choses sont vouées à changer :).&lt;/p&gt;
+&lt;p&gt;À peu près tous mes projet sur lesquels je bosse actuellement. Et peut-être d&amp;rsquo;autre chose, je ne sais pas encore quel sera le contenu, mais les choses sont vouées à changer 😊.&lt;/p&gt;
 &lt;h2 id=&#34;sur-quels-projets-est-ce-que-tu-travailles-&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#sur-quels-projets-est-ce-que-tu-travailles-&#34;&gt;

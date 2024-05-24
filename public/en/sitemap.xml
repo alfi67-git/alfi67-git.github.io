@@ -2,96 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>//localhost:1313/en/</loc>
+        <loc>https://afidalgo.fr/en/</loc>
         <lastmod>2024-05-22T15:28:39+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/"
+          href="https://afidalgo.fr/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/"
+          href="https://afidalgo.fr/en/"
         />
       </url><url>
-        <loc>//localhost:1313/en/posts/</loc>
+        <loc>https://afidalgo.fr/en/posts/</loc>
         <lastmod>2024-05-22T15:28:39+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/posts/"
+          href="https://afidalgo.fr/posts/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/posts/"
+          href="https://afidalgo.fr/en/posts/"
         />
       </url><url>
-        <loc>//localhost:1313/en/posts/first-post/</loc>
-        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
-      </url><url>
-        <loc>//localhost:1313/en/tags/hello-world/</loc>
+        <loc>https://afidalgo.fr/en/posts/first-post/</loc>
         <lastmod>2024-05-20T18:00:13+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/tags/hello-world/"
+          href="https://afidalgo.fr/posts/first-post/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/tags/hello-world/"
+          href="https://afidalgo.fr/en/posts/first-post/"
         />
       </url><url>
-        <loc>//localhost:1313/en/tags/</loc>
+        <loc>https://afidalgo.fr/en/tags/hello-world/</loc>
         <lastmod>2024-05-20T18:00:13+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/tags/"
+          href="https://afidalgo.fr/tags/hello-world/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/tags/"
+          href="https://afidalgo.fr/en/tags/hello-world/"
         />
       </url><url>
-        <loc>//localhost:1313/en/about/</loc>
+        <loc>https://afidalgo.fr/en/tags/</loc>
+        <lastmod>2024-05-20T18:00:13+02:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="fr"
+          href="https://afidalgo.fr/tags/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://afidalgo.fr/en/tags/"
+        />
+      </url><url>
+        <loc>https://afidalgo.fr/en/about/</loc>
         <lastmod>2024-05-20T18:00:01+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/about/"
+          href="https://afidalgo.fr/about/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/about/"
+          href="https://afidalgo.fr/en/about/"
         />
       </url><url>
-        <loc>//localhost:1313/en/authors/</loc>
+        <loc>https://afidalgo.fr/en/authors/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/authors/"
+          href="https://afidalgo.fr/authors/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/authors/"
+          href="https://afidalgo.fr/en/authors/"
         />
       </url><url>
-        <loc>//localhost:1313/en/categories/</loc>
+        <loc>https://afidalgo.fr/en/categories/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="//localhost:1313/categories/"
+          href="https://afidalgo.fr/categories/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="//localhost:1313/en/categories/"
+          href="https://afidalgo.fr/en/categories/"
         />
       </url>
 </urlset>
