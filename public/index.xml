@@ -6,10 +6,107 @@
     <description>Lab d&#39;Alfi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Wed, 22 May 2024 15:28:18 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2024 23:38:17 +0200</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>🌐 Héberger son site gratuitement sur GitHub</title>
+      <link>/posts/host_github/host-son-site-sur-github/</link>
+      <pubDate>Wed, 22 May 2024 15:28:18 +0200</pubDate>
+      
+      <guid>/posts/host_github/host-son-site-sur-github/</guid>
+      <description>&lt;p&gt;Vous avez un site web et vous souhaitez le publier pour montrer au monde vos travaux, cependant vous n&amp;rsquo;avez pas ou très peu d&amp;rsquo;argent.&lt;/p&gt;
+&lt;p&gt;Il existe une solution pour héberger votre site web gratuitement avec GitHub, c&amp;rsquo;est ce que nous allons apprendre à faire dans ce tutoriel.&lt;/p&gt;
+&lt;h2 id=&#34;mise-en-place-du-repository&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#mise-en-place-du-repository&#34;&gt;
+        #
+    &lt;/a&gt;
+    Mise en place du repository
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans un premier temps, rendez-vous sur Github et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;https://afidalgo.fr/posts/host-github/new-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Une nouvelle page apparaît ensuite, votre repo doit avoir le nom &lt;em&gt;username&lt;/em&gt;.github.io, faite également en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;https://afidalgo.fr/posts/host-github/name-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;À présent, il faut push votre dossier sur lequel vous avez durement travaillé.&lt;/p&gt;
+&lt;h2 id=&#34;mise-en-ligne-du-site&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#mise-en-ligne-du-site&#34;&gt;
+        #
+    &lt;/a&gt;
+    Mise en ligne du site
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Une fois votre repo créé et vos fichier uploadés, il est temps de publier votre site.&lt;/p&gt;
+&lt;p&gt;Dans les paramètres, rendez-vous dans la partie &lt;em&gt;pages&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;https://afidalgo.fr/posts/host-github/settings-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Dans la partie &lt;strong&gt;Build and deployment&lt;/strong&gt; sélectionnez la &lt;em&gt;Source&lt;/em&gt;, qui est:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;soit &lt;em&gt;GitHub Actions&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;soit &lt;em&gt;Deploy from a branch&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;À vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la deuxième option.&lt;/p&gt;
+&lt;p&gt;Sélectionnez également la &lt;em&gt;Branch&lt;/em&gt; de votre repo et sauvegardez. Dans quelques instant, un message vous disant que votre site est publié devrait apparaître.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host-github/site_published.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !&lt;/p&gt;
+&lt;h2 id=&#34;nom-de-domaine-personnalisé&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#nom-de-domaine-personnalis%c3%a9&#34;&gt;
+        #
+    &lt;/a&gt;
+    Nom de domaine personnalisé
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Votre site est publié, c&amp;rsquo;est très chouette, mais vous n&amp;rsquo;êtes pas très satisfait du nom de domaine par défaut donné par GitHub. Pas de panique, vous pouvez le changer, et ceci très facilement !&lt;/p&gt;
+&lt;p&gt;Si vous avez acheté un nom de domaine auprès d&amp;rsquo;un fournisseur, vous pouvez préciser à GitHub le nom de domaine de votre souhait.&lt;/p&gt;
+&lt;p&gt;Pour ce faire, vous devez faire quelques ajouts au niveau de votre fournisseur.&lt;/p&gt;
+&lt;p&gt;Ici, nous prendrons le cas d&amp;rsquo;OVH puisque c&amp;rsquo;est celui que j&amp;rsquo;utilise, mais les ajouts à faire sont les mêmes peu importe le fournisseur.&lt;/p&gt;
+&lt;h3 id=&#34;définir-le-nom-de-domaine&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#d%c3%a9finir-le-nom-de-domaine&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Définir le nom de domaine
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Avant tout, il est recommandé de renseigner votre nom de domaine avant de procéder aux divers ajouts. Une fois renseigner, cliquez sur &lt;em&gt;Save&lt;/em&gt; et attendez quelques secondes que la vérification DNS s&amp;rsquo;effectue.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host-github/subdomain.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;configurer-la-résolution-de-nom&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#configurer-la-r%c3%a9solution-de-nom&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Configurer la résolution de nom
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Il à présent temps de voir un oeil au niveau de la configuration de notre nom de domaine.&lt;/p&gt;
+&lt;p&gt;Rendez-vous sur le site de votre fournisseur de nom de domaine, sélectionnez votre nom de domaine et rajoutez une nouvelle entrée.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Sélectionnez le champ &lt;strong&gt;A&lt;/strong&gt; (qui permet d&amp;rsquo;associer un nom de domaine à une adresse IP)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Définissez en cible les serveurs de GitHub (plusieurs sont possibles, mais un seul suffis)&lt;/p&gt;
+&lt;p&gt;2.1. Laissez le sous domaine vide&lt;/p&gt;
+&lt;p&gt;2.2. Définissez la cible comme &lt;code&gt;185.199.108.153&lt;/code&gt;
+&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host-github/zone-A.png&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ajouter un &lt;strong&gt;CNAME&lt;/strong&gt; (similaire au champ A, mais permet de définir un nom alternatif)&lt;/p&gt;
+&lt;p&gt;3.1. Définissez le sous domaine comme &lt;code&gt;www&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;3.2. Définissez la cible comme &lt;code&gt;pseudogit.github.io&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host-github/CNAME.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Et si vous retournez sur GitHub vous devrez avoir un message tout en haut de la page vous précisant que votre site est bien publié et fonctionne avec le nom de domaine affilié.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site web publié&#34; src=&#34;https://afidalgo.fr/posts/host-github/published2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Et voilà, votre site est publié avec un nom de domaine personnalisé, le tout gratuitement !&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;bravo vous êtes sur internet&#34; src=&#34;https://afidalgo.fr/posts/host-github/bravo.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;À bientôt pour de nouvelles aventures sur les internets 🤓 !&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>👋 Hello World</title>
@@ -19,7 +116,7 @@
       <guid>/posts/first-post/</guid>
       <description>&lt;p&gt;Le tout premier article du site 😄 !&lt;/p&gt;
 &lt;p&gt;Bonjour à toi qui lis ça, t&amp;rsquo;auras pas grand-chose à lire pour le moment puisque ceci n&amp;rsquo;est que le tout premier article du site, mais d&amp;rsquo;autres sont à prévoir.&lt;/p&gt;
-&lt;p&gt;Je pense que je partagerais mes projets, des petits tutos, mes découvertes ou l&amp;rsquo;avancement de mon apprentissage sur diverse choses..&lt;/p&gt;</description>
+&lt;p&gt;Je pense que je partagerais mes projets, des petits tutos, mes découvertes ou l&amp;rsquo;avancement de mon apprentissage sur diverses choses..&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,7 +135,7 @@
     &lt;em&gt;Il y aura quoi sur ce site ?&lt;/em&gt;
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;À peu près tous mes projet sur lesquels je bosse actuellement. Et peut-être d&amp;rsquo;autre chose, je ne sais pas encore quel sera le contenu, mais les choses sont vouées à changer 😊.&lt;/p&gt;
+&lt;p&gt;À peu près tous mes projets sur lesquels je bosse actuellement. Et peut-être d&amp;rsquo;autre chose, je ne sais pas encore quel sera le contenu, mais les choses sont vouées à changer 😊.&lt;/p&gt;
 &lt;h2 id=&#34;sur-quels-projets-est-ce-que-tu-travailles-&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#sur-quels-projets-est-ce-que-tu-travailles-&#34;&gt;
@@ -48,7 +145,7 @@
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;J&amp;rsquo;ai possiblement un TDAH donc j&amp;rsquo;ai plein de projet lancés, mais quasiment aucun ne sont terminés.&lt;/p&gt;
-&lt;p&gt;CEPENDANT ! Je peux vous faire une liste non-exhaustives des projets sur lesquels je bosse de temps à autre :&lt;/p&gt;
+&lt;p&gt;CEPENDANT ! Je peux vous faire une liste non-exhaustive des projets sur lesquels je bosse de temps à autre :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;un serveur Minecraft ⛏&lt;/li&gt;
 &lt;li&gt;un serveur Proxmox 🖥&lt;/li&gt;

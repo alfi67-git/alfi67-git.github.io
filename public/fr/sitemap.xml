@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
         <loc>https://afidalgo.fr/</loc>
-        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+        <lastmod>2024-05-24T23:38:17+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
@@ -16,7 +16,7 @@
         />
       </url><url>
         <loc>https://afidalgo.fr/posts/</loc>
-        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+        <lastmod>2024-05-24T23:38:17+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
@@ -27,6 +27,44 @@
           hreflang="fr"
           href="https://afidalgo.fr/posts/"
         />
+      </url><url>
+        <loc>https://afidalgo.fr/posts/host_github/host-son-site-sur-github/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+      </url><url>
+        <loc>https://afidalgo.fr/categories/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://afidalgo.fr/en/categories/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="fr"
+          href="https://afidalgo.fr/categories/"
+        />
+      </url><url>
+        <loc>https://afidalgo.fr/tags/github/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+      </url><url>
+        <loc>https://afidalgo.fr/tags/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="https://afidalgo.fr/en/tags/"
+        />
+        <xhtml:link
+          rel="alternate"
+          hreflang="fr"
+          href="https://afidalgo.fr/tags/"
+        />
+      </url><url>
+        <loc>https://afidalgo.fr/categories/web/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
+      </url><url>
+        <loc>https://afidalgo.fr/tags/website/</loc>
+        <lastmod>2024-05-22T15:28:18+02:00</lastmod>
       </url><url>
         <loc>https://afidalgo.fr/posts/first-post/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
@@ -54,19 +92,6 @@
           href="https://afidalgo.fr/tags/hello-world/"
         />
       </url><url>
-        <loc>https://afidalgo.fr/tags/</loc>
-        <lastmod>2024-05-20T18:00:24+02:00</lastmod>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://afidalgo.fr/en/tags/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="https://afidalgo.fr/tags/"
-        />
-      </url><url>
         <loc>https://afidalgo.fr/about/</loc>
         <lastmod>2024-05-20T18:00:01+02:00</lastmod>
         <xhtml:link
@@ -90,18 +115,6 @@
           rel="alternate"
           hreflang="fr"
           href="https://afidalgo.fr/authors/"
-        />
-      </url><url>
-        <loc>https://afidalgo.fr/categories/</loc>
-        <xhtml:link
-          rel="alternate"
-          hreflang="en"
-          href="https://afidalgo.fr/en/categories/"
-        />
-        <xhtml:link
-          rel="alternate"
-          hreflang="fr"
-          href="https://afidalgo.fr/categories/"
         />
       </url>
 </urlset>
