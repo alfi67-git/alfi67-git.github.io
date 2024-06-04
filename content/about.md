@@ -21,7 +21,8 @@ Bienvenue sur mon site web, il est encore un peu vide, mais il ne devrait pas ta
 
 J'ai possiblement un TDAH donc j'ai plein de projet lancés, mais quasiment aucun ne sont terminés.
 
-CEPENDANT ! Je peux vous faire une liste non-exhaustive des projets sur lesquels je bosse de temps à autre :
+![CEPENDANT!](/posts/cependant.gif)
+Je peux vous faire une liste non-exhaustive des projets sur lesquels je bosse de temps à autre (quand j'arrive à m'organiser) :
 
 - un serveur Minecraft ⛏
 - un serveur Proxmox 🖥
