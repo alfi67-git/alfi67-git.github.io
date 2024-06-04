@@ -470,7 +470,7 @@
     <summary>Table of Contents</summary>
     <div class="inner"><nav id="TableOfContents">
   <ul>
-    <li><a href="#technologies-utilisé">Technologies utilisé</a>
+    <li><a href="#technologies-utilisées">Technologies utilisées</a>
       <ul>
         <li><a href="#flutter">Flutter</a></li>
         <li><a href="#postman">Postman</a></li>
@@ -526,12 +526,12 @@ Projet qui doit être réalisé au sein de l&rsquo;entreprise où je me trouve.<
 <li>Permettre de changer l&rsquo;affectation d&rsquo;un équipement à un utilisateur</li>
 <li>Changer le statut d&rsquo;un équipement</li>
 </ul>
-<h2 id="technologies-utilisé" >
+<h2 id="technologies-utilisées" >
 <div>
-    <a href="#technologies-utilis%c3%a9">
+    <a href="#technologies-utilis%c3%a9es">
         #
     </a>
-    Technologies utilisé
+    Technologies utilisées
 </div>
 </h2>
 <h3 id="flutter" >
@@ -571,7 +571,7 @@ Projet qui doit être réalisé au sein de l&rsquo;entreprise où je me trouve.<
     Premiers pas
 </div>
 </h2>
-<p>Dans cette première partie, le but est de prendre en main <em>Postman</em> que j&rsquo;utiliserais durant ce projet, comme expliquer plus haut, pour faire des appels à l&rsquo;API de GLPI.</p>
+<p>Dans cette première partie, le but est de prendre en main <em>Postman</em> que j&rsquo;utiliserai durant ce projet, comme expliquer plus haut, pour faire des appels à l&rsquo;API de GLPI.</p>
 <p>Comme c&rsquo;est la première fois que j&rsquo;utilise Postman, je ne comprends pas grand-chose, raison pour laquelle j&rsquo;ai une petite ToDo list.</p>
 <p>Mon but, c&rsquo;est donc :</p>
 <ul>
@@ -587,10 +587,10 @@ Projet qui doit être réalisé au sein de l&rsquo;entreprise où je me trouve.<
     Activer l&rsquo;API de GLPI
 </div>
 </h2>
-<p>Rien de bien compliquer. Si vous avez un full accès à votre GLPI, rendez vous dans <em>Configuration (1)</em> &gt; <em>Général (2)</em> &gt; <em>API (3)</em> &gt; <em>Activer l&rsquo;API Rest (4)</em> &gt; <em>Activer la connexion avec identifiants (5)</em> et enfin cliquez sur <em>Sauvegarder</em></p>
+<p>Rien de bien compliqué. Si vous avez un full accès à votre GLPI, rendez vous dans <em>Configuration (1)</em> &gt; <em>Général (2)</em> &gt; <em>API (3)</em> &gt; <em>Activer l&rsquo;API Rest (4)</em> &gt; <em>Activer la connexion avec identifiants (5)</em> et enfin cliquez sur <em>Sauvegarder</em></p>
 <p><img alt="activer l&rsquo;api" src="/posts/PFE/part1/activation_api2.png"></p>
 <p>Voilà, donc maintenant l&rsquo;API est activé, il faut ensuite rajouter un nouveau client de l&rsquo;API, c&rsquo;est le bouton qui se trouve juste en dessous.</p>
-<p>Donnez un nom (1), ensuite définir la plage d&rsquo;adresse IP qui sera utiliser par l&rsquo;API, ici, c&rsquo;est le range du Docker (2) et pour finir, faut s&rsquo;assurer que la case &ldquo;<em>Regénérer</em>&rdquo; est cochée, ce qui vous permettra d&rsquo;avoir un jeton, on en aura besoin pour plus tard.
+<p>Donner un nom (1), ensuite définir la plage d&rsquo;adresse IP qui sera utiliser par l&rsquo;API, ici, c&rsquo;est le range du Docker (2) et pour finir, faut s&rsquo;assurer que la case &ldquo;<em>Regénérer</em>&rdquo; est cochée, ce qui permettra d&rsquo;avoir un jeton, on en aura besoin pour plus tard.
 <img alt="activer l&rsquo;api" src="/posts/PFE/part1/client_api.png"></p>
 <h3 id="la-documentation" >
 <div>
@@ -600,8 +600,8 @@ Projet qui doit être réalisé au sein de l&rsquo;entreprise où je me trouve.<
     La documentation
 </div>
 </h3>
-<p>Maintenant que le client est créé et que l&rsquo;API est activer, il est temps de s&rsquo;y rendre.
-De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em>URL de l&rsquo;API</em> avec un lien vers celles-ci, qui est (dans mon cas): <code>http://localhost:8080/apirest.php/</code></p>
+<p>Maintenant que le client est créé et que l&rsquo;API est activée, il est temps de s&rsquo;y rendre.
+De retour sur la section consacrée à l&rsquo;API, il y a une ligne appelée <em>URL de l&rsquo;API</em> avec un lien vers celle-ci, qui est (dans mon cas): <code>http://localhost:8080/apirest.php/</code></p>
 <p>En se rendant sur cette page, on a donc accès à la documentation complète de l&rsquo;API, ce qui va être très utile par la suite avec Postman.</p>
 <h2 id="utilisation-de-postman" >
 <div>
@@ -617,7 +617,7 @@ De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em
 <ul>
 <li><strong>GET</strong> qui a pour but d&rsquo;aller chercher une page ou de la donnée.</li>
 <li><strong>POST</strong> a pour but d&rsquo;envoyer de l&rsquo;information contenue dans le <em><strong>body</strong></em> de la requête, vers le serveur.</li>
-<li><strong>PUT</strong> va écraser une ressource avec de la nouvelle donnée, là aussi défini dans le <em><strong>body</strong></em>.</li>
+<li><strong>PUT</strong> va écraser une ressource avec de la nouvelle donnée, là aussi définie dans le <em><strong>body</strong></em>.</li>
 <li><strong>DELETE</strong> je pense pas avoir besoin d&rsquo;expliquer.</li>
 </ul>
 <p>En jaune, c&rsquo;est l&rsquo;URL qui comporte toutes les <em>query</em> qui sont des données au format <code>clé=valeur</code> après un <code>?</code>.</p>
@@ -642,13 +642,13 @@ De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em
 </ul>
 <p>On va donc prendre la première option.</p>
 <blockquote>
-<p>Pour récupérer ce token, faut aller dans <em>Administration</em> &gt; <em>Utilisateurs</em> &gt; <em>{username}</em> et, tout en bas de la page, dans la section <strong>Clef d&rsquo;accès distant</strong> devrait apparaître le <em>Jeton d&rsquo;API</em>. S&rsquo;il n&rsquo;est pas dispo, coche juste la case <em>Regénéré</em> à droite et clique sur <em>Sauvegarder</em>.</p>
+<p>Pour récupérer ce token, faut aller dans <em>Administration</em> &gt; <em>Utilisateurs</em> &gt; <em>{username}</em> et, tout en bas de la page, dans la section <strong>Clef d&rsquo;accès distant</strong> doit apparaître le <em>Jeton d&rsquo;API</em>. S&rsquo;il n&rsquo;est pas dispo, coche juste la case <em>Regénéré</em> à droite et clique sur <em>Sauvegarder</em>.</p>
 </blockquote>
 <p>On copie la clé et on retourne sur Postman.</p>
 <p><img alt="postman init session" src="/posts/PFE/part1/postman_initsession.png"></p>
 <p>Faut aller dans la section <em>Authorization</em> et dans le menu déroulant <strong>Type</strong> chercher <em><strong>API KEY</strong></em>. Pour la Key, faut donc écrire <em>user_token</em> et dans Value, coller la clé copiée juste avant.</p>
 <p>Ensuite dans <em><strong>Params</strong></em> rajoute l&rsquo;<strong>app_token</strong> généré plus haut en activant l&rsquo;API.</p>
-<p>Et si tout est bon tu devrais dois un token de session qui apparaît dans le <em>Body</em> juste en dessous et qui se régénère à chaque éxecusion de la commande.</p>
+<p>Et si tout est bon tu devrais dois un token de session qui apparaît dans le <em>Body</em> juste en dessous et qui se régénère à chaque exécusion de la commande.</p>
 <p>Comme ceci:
 <img alt="postman session token" src="/posts/PFE/part1/postman_session_token.png"></p>
 <p>Ce token va être utile pour les autres commandes que je vais devoir exécuter, donc faut le garder dans un coin.</p>
@@ -660,16 +660,16 @@ De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em
     Lister les tous les ordis
 </div>
 </h3>
-<p>Pour que ça puisse fonctionner, il faut bien évidemment une liste d&rsquo;ordis créés au préaliable. J&rsquo;en ai créé 4, on devrait donc en voir 4 de listé.</p>
+<p>Pour que ça puisse fonctionner, il faut bien évidemment une liste d&rsquo;ordis créés au préalable. J&rsquo;en ai créé 4, on devrait donc en voir 4 de listé.</p>
 <p>Donc le but, c&rsquo;est de lister tous les items, pour ce faire, direction la documentation une nouvelle fois dans la section <strong>Get all items</strong>. L&rsquo;url est <code>apirest.php/:itemtype/</code>. Il faut logicement remplacer <code>:itemtype</code> par <code>Computer</code> vu que c&rsquo;est ce que je cherche à afficher ici.</p>
 <p>l&rsquo;url devrait donc ressembler à un truc comme ça : <code>http://localhost:8080/apirest.php/Computer</code></p>
 <p><strong>Paramètres :</strong></p>
 <ul>
 <li>Session-Token : qui est obligatoire.</li>
 <li>App-Token : qu&rsquo;est pas obligatoire, mais si je ne le mets pas ça ne fonctionne pas&hellip;</li>
-<li>Session_token : c&rsquo;est pas indiquer dans la doc, mais j&rsquo;ai un message d&rsquo;erreur si je ne le met pas&hellip;</li>
+<li>Session_token : c&rsquo;est pas indiqué dans la doc, mais j&rsquo;ai un message d&rsquo;erreur si j&rsquo;le mets pas&hellip;</li>
 </ul>
-<p>Après avoir ajouté tout ça, et cliquer sur <strong>Send</strong> j&rsquo;obtiens donc un résultat, que voici :
+<p>Après avoir ajouté tout ça, et cliqué sur <strong>Send</strong> j&rsquo;obtiens donc un résultat, que voici :
 <img alt="postman list d&rsquo;items" src="/posts/PFE/part1/postman_get_items.png"></p>
 <p>Okay ! Parfait, ça fonctionne ! On va pouvoir passer à la suite, c-à-d <em>ajouter</em> un nouvel ordinateur dans la liste.</p>
 <h3 id="ajouter-un-nouvel-ordinateur" >
@@ -682,12 +682,12 @@ De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em
 </h3>
 <p>Pour ajouter un objet, il va falloir changer le type de requête, faut passer en mode <strong>POST</strong>. L&rsquo;url reste le même qu&rsquo;avant, les paramètres de query sont les mêmes cependant maintenant faut définir le pc qu&rsquo;on veut créer.</p>
 <p>Donc pour ça faut aller dans <strong>Body</strong> et sélectionner <em>raw</em> et c&rsquo;est là dedans qu&rsquo;on va pouvoir personnaliser notre premier pc créer via l&rsquo;API.</p>
-<p>et j&rsquo;ai ajouter cet input :</p>
+<p>et j&rsquo;ai ajouté cet input :</p>
 <pre><code>{
-    &quot;input&quot;: {
-        &quot;name&quot;: &quot;pc test api&quot;,
-        &quot;users_id_tech&quot;: 4,
-        &quot;states_id&quot;: 1
+&quot;input&quot;: {
+    &quot;name&quot;: &quot;pc test api&quot;,
+    &quot;users_id_tech&quot;: 4,
+    &quot;states_id&quot;: 1
     }
 }
 </code></pre>
@@ -696,6 +696,25 @@ De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em
 <p>Donc maintenant il ne reste plus qu&rsquo;à vérifier qu&rsquo;il est bien présent dans la liste des pc de GLPI.</p>
 <p><img alt="pc créé dans GLPI" src="/posts/PFE/part1/GLPI_pc.png"></p>
 <p>Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&rsquo;API !!</p>
+<p>Bon c&rsquo;est super, mais le but de l&rsquo;application c&rsquo;est aussi de pouvoir modifier des choses.</p>
+<p>Pour modifier c&rsquo;est rien de bien compliqué, on va prendre l&rsquo;exact même URL que pour l&rsquo;ajout, on va modifier la commande par <strong>PUT</strong> et dans le body on va mettre ceci (en ayant repéré l&rsquo;id de l&rsquo;objet que l&rsquo;on souhaite modifier ):</p>
+<pre><code>{
+&quot;input&quot;: {
+    &quot;id&quot;: &quot;6&quot;,
+    &quot;name&quot;: &quot;pc test api modifié&quot;
+    }
+}
+</code></pre>
+<p>Une fois la commande exécutée, on devrait avoir un message comme suivant :
+<img alt="pc modifié dans GLPI" src="/posts/PFE/part1/GLPI_pc_update.png"></p>
+<p>Et pour vérifier que la commande a bien été prise en compte, il suffit de se rendre dans GLPI.
+<img alt="pc modifié dans GLPI" src="/posts/PFE/part1/GLPI_pc_update2.png"></p>
+<p>Et voilà ! Je sais à présent :</p>
+<ul>
+<li>Me connecter à l&rsquo;API</li>
+<li>Ajouter un objet dans GLPI</li>
+<li>Et le modifier</li>
+</ul>
         </div>
 
     </article>
