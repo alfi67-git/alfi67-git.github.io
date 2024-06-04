@@ -19,7 +19,7 @@ Bienvenue sur mon site web, il est encore un peu vide, mais il ne devrait pas ta
 
 ## *Sur quels projets est-ce que tu travailles ?*
 
-J'ai possiblement un TDAH donc j'ai plein de projet lancés, mais quasiment aucun ne sont terminés.
+J'ai possiblement un TDAH donc j'ai plein de projets lancés, mais quasiment aucun ne sont terminés.
 
 ![CEPENDANT!](/posts/cependant.gif)
 Je peux vous faire une liste non-exhaustive des projets sur lesquels je bosse de temps à autre (quand j'arrive à m'organiser) :
