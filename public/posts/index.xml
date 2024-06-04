@@ -12,6 +12,194 @@
     
     
     <item>
+      <title>🎓 Projet de Fin d&#39;Étude | part1 Les premiers pas</title>
+      <link>/posts/cesi/pfe/pfe_par1/</link>
+      <pubDate>Fri, 24 May 2024 23:38:17 +0200</pubDate>
+      
+      <guid>/posts/cesi/pfe/pfe_par1/</guid>
+      <description>&lt;p&gt;Dans le cadre de la validation de mon cursus d&amp;rsquo;étude, je dois réaliser un projet de fin d&amp;rsquo;études.
+Projet qui doit être réalisé au sein de l&amp;rsquo;entreprise où je me trouve.&lt;/p&gt;
+&lt;p&gt;Le projet consiste à créer une application Android qui permet, via l&amp;rsquo;API de GLPI, de mettre à jour la base de données.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;application devra :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Être simple d&amp;rsquo;utilisation&lt;/li&gt;
+&lt;li&gt;Permettre d&amp;rsquo;affecter un équipement un utilisateur&lt;/li&gt;
+&lt;li&gt;Permettre de changer l&amp;rsquo;affectation d&amp;rsquo;un équipement à un utilisateur&lt;/li&gt;
+&lt;li&gt;Changer le statut d&amp;rsquo;un équipement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technologies-utilisé&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#technologies-utilis%c3%a9&#34;&gt;
+        #
+    &lt;/a&gt;
+    Technologies utilisé
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;h3 id=&#34;flutter&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#flutter&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Flutter
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Flutter, c&amp;rsquo;est un outil gratuit de Google qui te permet de créer des applis pour mobile, web et ordinateur avec un seul code. En gros, tu écris ton code une fois et tu peux le faire tourner partout. Il utilise un langage appelé Dart, mais l&amp;rsquo;important, c&amp;rsquo;est que tu peux faire de super belles interfaces rapidement et facilement. C&amp;rsquo;est super pratique pour avoir une appli qui marche bien et qui a le même look sur toutes les plateformes.&lt;/p&gt;
+&lt;h3 id=&#34;postman&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#postman&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Postman
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Postman, c&amp;rsquo;est un outil super pratique pour tester des API. Tu peux envoyer des requêtes HTTP et voir les réponses, sans avoir à écrire du code compliqué. En gros, c&amp;rsquo;est comme un couteau suisse pour les développeurs qui bossent avec des API : tu peux tester, déboguer, et documenter tes endpoints super facilement. C&amp;rsquo;est super utile pour vérifier que tout fonctionne bien avant de mettre en ligne ton application.&lt;/p&gt;
+&lt;h3 id=&#34;glpi-dans-un-docker&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#glpi-dans-un-docker&#34;&gt;
+        ##
+    &lt;/a&gt;
+    GLPI (dans un Docker)
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;GLPI, c&amp;rsquo;est un outil open-source pour gérer tout ce qui concerne l&amp;rsquo;informatique dans une entreprise. Il t&amp;rsquo;aide à suivre les équipements, gérer les tickets de support, et organiser les tâches de maintenance. En gros, c&amp;rsquo;est comme un tableau de bord pour tout ce qui touche à l&amp;rsquo;IT : tu sais toujours ce qui se passe, où sont tes ressources, et quelles sont les priorités. Super utile pour garder tout en ordre et résoudre les problèmes rapidement.&lt;/p&gt;
+&lt;p&gt;N&amp;rsquo;ayant pas eu l&amp;rsquo;autorisation de ma hiérarchie pour accéder à l&amp;rsquo;API du GLPI de l&amp;rsquo;entreprise, j&amp;rsquo;en ai donc installé un en local grâce à Docker sur mon pc personnel.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;premiers-pas&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#premiers-pas&#34;&gt;
+        #
+    &lt;/a&gt;
+    Premiers pas
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dans cette première partie, le but est de prendre en main &lt;em&gt;Postman&lt;/em&gt; que j&amp;rsquo;utiliserais durant ce projet, comme expliquer plus haut, pour faire des appels à l&amp;rsquo;API de GLPI.&lt;/p&gt;
+&lt;p&gt;Comme c&amp;rsquo;est la première fois que j&amp;rsquo;utilise Postman, je ne comprends pas grand-chose, raison pour laquelle j&amp;rsquo;ai une petite ToDo list.&lt;/p&gt;
+&lt;p&gt;Mon but, c&amp;rsquo;est donc :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;D&amp;rsquo;activer l&amp;rsquo;API&lt;/li&gt;
+&lt;li&gt;Faire mes premiers call avec Postman sur l&amp;rsquo;API de GLPI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;C&amp;rsquo;est pas beaucoup, mais ça a été un sacré bordel, surtout au niveau de Postman.&lt;/p&gt;
+&lt;h2 id=&#34;activer-lapi-de-glpi&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#activer-lapi-de-glpi&#34;&gt;
+        #
+    &lt;/a&gt;
+    Activer l&amp;rsquo;API de GLPI
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Rien de bien compliquer. Si vous avez un full accès à votre GLPI, rendez vous dans &lt;em&gt;Configuration (1)&lt;/em&gt; &amp;gt; &lt;em&gt;Général (2)&lt;/em&gt; &amp;gt; &lt;em&gt;API (3)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer l&amp;rsquo;API Rest (4)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer la connexion avec identifiants (5)&lt;/em&gt; et enfin cliquez sur &lt;em&gt;Sauvegarder&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/activation_api2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Voilà, donc maintenant l&amp;rsquo;API est activé, il faut ensuite rajouter un nouveau client de l&amp;rsquo;API, c&amp;rsquo;est le bouton qui se trouve juste en dessous.&lt;/p&gt;
+&lt;p&gt;Donnez un nom (1), ensuite définir la plage d&amp;rsquo;adresse IP qui sera utiliser par l&amp;rsquo;API, ici, c&amp;rsquo;est le range du Docker (2) et pour finir, faut s&amp;rsquo;assurer que la case &amp;ldquo;&lt;em&gt;Regénérer&lt;/em&gt;&amp;rdquo; est cochée, ce qui vous permettra d&amp;rsquo;avoir un jeton, on en aura besoin pour plus tard.
+&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/client_api.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;la-documentation&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#la-documentation&#34;&gt;
+        ##
+    &lt;/a&gt;
+    La documentation
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Maintenant que le client est créé et que l&amp;rsquo;API est activer, il est temps de s&amp;rsquo;y rendre.
+De retour sur la section consacré à l&amp;rsquo;API, il y a une ligne appelée &lt;em&gt;URL de l&amp;rsquo;API&lt;/em&gt; avec un lien vers celles-ci, qui est (dans mon cas): &lt;code&gt;http://localhost:8080/apirest.php/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;En se rendant sur cette page, on a donc accès à la documentation complète de l&amp;rsquo;API, ce qui va être très utile par la suite avec Postman.&lt;/p&gt;
+&lt;h2 id=&#34;utilisation-de-postman&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#utilisation-de-postman&#34;&gt;
+        #
+    &lt;/a&gt;
+    Utilisation de Postman
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;Postman, ça ressemble à ça :
+&lt;img alt=&#34;postman&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;En rouge, c&amp;rsquo;est les requêtes HTTP. Celles qui nous intéressent sont :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt; qui a pour but d&amp;rsquo;aller chercher une page ou de la donnée.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt; a pour but d&amp;rsquo;envoyer de l&amp;rsquo;information contenue dans le &lt;em&gt;&lt;strong&gt;body&lt;/strong&gt;&lt;/em&gt; de la requête, vers le serveur.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt; va écraser une ressource avec de la nouvelle donnée, là aussi défini dans le &lt;em&gt;&lt;strong&gt;body&lt;/strong&gt;&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt; je pense pas avoir besoin d&amp;rsquo;expliquer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En jaune, c&amp;rsquo;est l&amp;rsquo;URL qui comporte toutes les &lt;em&gt;query&lt;/em&gt; qui sont des données au format &lt;code&gt;clé=valeur&lt;/code&gt; après un &lt;code&gt;?&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Par exemple : &lt;code&gt;leboncoin.fr/recherche/?category=9&amp;amp;locations=r_12&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Les champs &lt;em&gt;category&lt;/em&gt; et &lt;em&gt;location&lt;/em&gt; sont des &lt;em&gt;query&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;premier-call-vers-lapi&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#premier-call-vers-lapi&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Premier call vers l&amp;rsquo;API
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Pour initialiser la première connexion, il faut d&amp;rsquo;abord savoir quoi faire. Donc, direction la documentation, section &lt;em&gt;&lt;strong&gt;Init session&lt;/strong&gt;&lt;/em&gt;. Cette requête va permettre de générer un token de session qui servira à l&amp;rsquo;utilisation de l&amp;rsquo;API. Pour générer cette requête, on va avoir besoin de certains paramètres. Il y a le choix entre 2 solutions :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;l&amp;rsquo;utilisation d&amp;rsquo;un &lt;em&gt;user_token&lt;/em&gt; (qui est la méthode la plus simple)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;l&amp;rsquo;&lt;em&gt;App-Token&lt;/em&gt; couplé avec un &lt;em&gt;login&lt;/em&gt; et &lt;em&gt;password&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On va donc prendre la première option.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Pour récupérer ce token, faut aller dans &lt;em&gt;Administration&lt;/em&gt; &amp;gt; &lt;em&gt;Utilisateurs&lt;/em&gt; &amp;gt; &lt;em&gt;{username}&lt;/em&gt; et, tout en bas de la page, dans la section &lt;strong&gt;Clef d&amp;rsquo;accès distant&lt;/strong&gt; devrait apparaître le &lt;em&gt;Jeton d&amp;rsquo;API&lt;/em&gt;. S&amp;rsquo;il n&amp;rsquo;est pas dispo, coche juste la case &lt;em&gt;Regénéré&lt;/em&gt; à droite et clique sur &lt;em&gt;Sauvegarder&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On copie la clé et on retourne sur Postman.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;postman init session&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_initsession.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Faut aller dans la section &lt;em&gt;Authorization&lt;/em&gt; et dans le menu déroulant &lt;strong&gt;Type&lt;/strong&gt; chercher &lt;em&gt;&lt;strong&gt;API KEY&lt;/strong&gt;&lt;/em&gt;. Pour la Key, faut donc écrire &lt;em&gt;user_token&lt;/em&gt; et dans Value, coller la clé copiée juste avant.&lt;/p&gt;
+&lt;p&gt;Ensuite dans &lt;em&gt;&lt;strong&gt;Params&lt;/strong&gt;&lt;/em&gt; rajoute l&amp;rsquo;&lt;strong&gt;app_token&lt;/strong&gt; généré plus haut en activant l&amp;rsquo;API.&lt;/p&gt;
+&lt;p&gt;Et si tout est bon tu devrais dois un token de session qui apparaît dans le &lt;em&gt;Body&lt;/em&gt; juste en dessous et qui se régénère à chaque éxecusion de la commande.&lt;/p&gt;
+&lt;p&gt;Comme ceci:
+&lt;img alt=&#34;postman session token&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_session_token.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ce token va être utile pour les autres commandes que je vais devoir exécuter, donc faut le garder dans un coin.&lt;/p&gt;
+&lt;h3 id=&#34;lister-les-tous-les-ordis&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#lister-les-tous-les-ordis&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Lister les tous les ordis
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Pour que ça puisse fonctionner, il faut bien évidemment une liste d&amp;rsquo;ordis créés au préaliable. J&amp;rsquo;en ai créé 4, on devrait donc en voir 4 de listé.&lt;/p&gt;
+&lt;p&gt;Donc le but, c&amp;rsquo;est de lister tous les items, pour ce faire, direction la documentation une nouvelle fois dans la section &lt;strong&gt;Get all items&lt;/strong&gt;. L&amp;rsquo;url est &lt;code&gt;apirest.php/:itemtype/&lt;/code&gt;. Il faut logicement remplacer &lt;code&gt;:itemtype&lt;/code&gt; par &lt;code&gt;Computer&lt;/code&gt; vu que c&amp;rsquo;est ce que je cherche à afficher ici.&lt;/p&gt;
+&lt;p&gt;l&amp;rsquo;url devrait donc ressembler à un truc comme ça : &lt;code&gt;http://localhost:8080/apirest.php/Computer&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Paramètres :&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Session-Token : qui est obligatoire.&lt;/li&gt;
+&lt;li&gt;App-Token : qu&amp;rsquo;est pas obligatoire, mais si je ne le mets pas ça ne fonctionne pas&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Session_token : c&amp;rsquo;est pas indiquer dans la doc, mais j&amp;rsquo;ai un message d&amp;rsquo;erreur si je ne le met pas&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Après avoir ajouté tout ça, et cliquer sur &lt;strong&gt;Send&lt;/strong&gt; j&amp;rsquo;obtiens donc un résultat, que voici :
+&lt;img alt=&#34;postman list d&amp;rsquo;items&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_get_items.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Okay ! Parfait, ça fonctionne ! On va pouvoir passer à la suite, c-à-d &lt;em&gt;ajouter&lt;/em&gt; un nouvel ordinateur dans la liste.&lt;/p&gt;
+&lt;h3 id=&#34;ajouter-un-nouvel-ordinateur&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#ajouter-un-nouvel-ordinateur&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Ajouter un nouvel ordinateur
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Pour ajouter un objet, il va falloir changer le type de requête, faut passer en mode &lt;strong&gt;POST&lt;/strong&gt;. L&amp;rsquo;url reste le même qu&amp;rsquo;avant, les paramètres de query sont les mêmes cependant maintenant faut définir le pc qu&amp;rsquo;on veut créer.&lt;/p&gt;
+&lt;p&gt;Donc pour ça faut aller dans &lt;strong&gt;Body&lt;/strong&gt; et sélectionner &lt;em&gt;raw&lt;/em&gt; et c&amp;rsquo;est là dedans qu&amp;rsquo;on va pouvoir personnaliser notre premier pc créer via l&amp;rsquo;API.&lt;/p&gt;
+&lt;p&gt;et j&amp;rsquo;ai ajouter cet input :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+    &amp;quot;input&amp;quot;: {
+        &amp;quot;name&amp;quot;: &amp;quot;pc test api&amp;quot;,
+        &amp;quot;users_id_tech&amp;quot;: 4,
+        &amp;quot;states_id&amp;quot;: 1
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ce qui m&amp;rsquo;a rendu ce résultat :
+&lt;img alt=&#34;pc créé&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_creation_pc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Donc maintenant il ne reste plus qu&amp;rsquo;à vérifier qu&amp;rsquo;il est bien présent dans la liste des pc de GLPI.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&amp;rsquo;API !!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>🌐 Héberger son site gratuitement sur GitHub</title>
       <link>/posts/host_github/host-son-site-sur-github/</link>
       <pubDate>Wed, 22 May 2024 15:28:18 +0200</pubDate>

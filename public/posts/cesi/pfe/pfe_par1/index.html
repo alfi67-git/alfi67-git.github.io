@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+
+<html lang="fr" data-theme="">
+<head>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+<title>🎓 Projet de Fin d&rsquo;Étude | part1 Les premiers pas - Lab d&rsquo;Alfi</title>
+
+<meta name="description" content="description de la page">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="https://afidalgo.fr/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="https://afidalgo.fr/favicon.png">
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.min.184a655c5ad8596648622468e6696abf0cf0a2cf8266df17b4f7a36fe9c97551.css" integrity="sha256-GEplXFrYWWZIYiRo5mlqvwzwos&#43;CZt8XtPejb&#43;nJdVE=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.min.c4c04b3ef88e3d619ad4c7ee5e03048422bc55c4fefdc1f07657c1133670aa22.css" integrity="sha256-xMBLPviOPWGa1MfuXgMEhCK8VcT&#43;/cHwdlfBEzZwqiI=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.min.21c5d8fe0a79d623b0adc1ce4bd4f6dd2c05cd939c9aaaa966ba7186b1464f4d.css" integrity="sha256-IcXY/gp51iOwrcHOS9T23SwFzZOcmqqpZrpxhrFGT00=">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+        
+    
+    
+
+    
+        <script src="/js/script.min.08f04d96386c73c9bf4d160333f8f448c05a6e01c06770542ee0e013954ce930.js" type="text/javascript" charset="utf-8" integrity="sha256-CPBNljhsc8m/TRYDM/j0SMBabgHAZ3BULuDgE5VM6TA="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main">Aller au contenu</a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">Lab d&#39;Alfi</a>
+</h1>
+
+        
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+
+    
+        <li>
+            <a href="https://github.com/Alfi67-git" title="Github" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://www.linkedin.com/in/alexandre-fidalgo" title="Linkedin" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="mailto:a.fidalgo.contact@gmail.com" title="Email" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="https://afidalgo.fr/" title="">ACCUEIL</a>
+        
+        <a class="" href="https://afidalgo.fr/about/" title="">À PROPOS</a>
+        
+        <a class="" href="https://afidalgo.fr/tags/" title="">TAGS</a>
+        
+        <a class="" href="https://afidalgo.fr/posts/" title="">ARCHIVES</a>
+        
+    </nav>
+
+
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                <h1 class="p-name post-title">🎓 Projet de Fin d&rsquo;Étude | part1 Les premiers pas</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2024-05-24">24 May 2024</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/cesi/pfe/pfe_par1/">/posts/cesi/pfe/pfe_par1/</a>
+    <a href="https://afidalgo.fr/" class="p-name p-author post-hidden-author h-card" rel="me">Alex</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/cesi/">CESI</a></li>
+                
+            </ul>
+        
+        
+            <ul class="post-tags">
+                
+                    
+                    <li><a href="/tags/pfe/">#PFE</a></li>
+                
+            </ul>
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#technologies-utilisé">Technologies utilisé</a>
+      <ul>
+        <li><a href="#flutter">Flutter</a></li>
+        <li><a href="#postman">Postman</a></li>
+        <li><a href="#glpi-dans-un-docker">GLPI (dans un Docker)</a></li>
+      </ul>
+    </li>
+    <li><a href="#premiers-pas">Premiers pas</a></li>
+    <li><a href="#activer-lapi-de-glpi">Activer l&rsquo;API de GLPI</a>
+      <ul>
+        <li><a href="#la-documentation">La documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#utilisation-de-postman">Utilisation de Postman</a>
+      <ul>
+        <li><a href="#premier-call-vers-lapi">Premier call vers l&rsquo;API</a></li>
+        <li><a href="#lister-les-tous-les-ordis">Lister les tous les ordis</a></li>
+        <li><a href="#ajouter-un-nouvel-ordinateur">Ajouter un nouvel ordinateur</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>Dans le cadre de la validation de mon cursus d&rsquo;étude, je dois réaliser un projet de fin d&rsquo;études.
+Projet qui doit être réalisé au sein de l&rsquo;entreprise où je me trouve.</p>
+<p>Le projet consiste à créer une application Android qui permet, via l&rsquo;API de GLPI, de mettre à jour la base de données.</p>
+<p>L&rsquo;application devra :</p>
+<ul>
+<li>Être simple d&rsquo;utilisation</li>
+<li>Permettre d&rsquo;affecter un équipement un utilisateur</li>
+<li>Permettre de changer l&rsquo;affectation d&rsquo;un équipement à un utilisateur</li>
+<li>Changer le statut d&rsquo;un équipement</li>
+</ul>
+<h2 id="technologies-utilisé" >
+<div>
+    <a href="#technologies-utilis%c3%a9">
+        #
+    </a>
+    Technologies utilisé
+</div>
+</h2>
+<h3 id="flutter" >
+<div>
+    <a href="#flutter">
+        ##
+    </a>
+    Flutter
+</div>
+</h3>
+<p>Flutter, c&rsquo;est un outil gratuit de Google qui te permet de créer des applis pour mobile, web et ordinateur avec un seul code. En gros, tu écris ton code une fois et tu peux le faire tourner partout. Il utilise un langage appelé Dart, mais l&rsquo;important, c&rsquo;est que tu peux faire de super belles interfaces rapidement et facilement. C&rsquo;est super pratique pour avoir une appli qui marche bien et qui a le même look sur toutes les plateformes.</p>
+<h3 id="postman" >
+<div>
+    <a href="#postman">
+        ##
+    </a>
+    Postman
+</div>
+</h3>
+<p>Postman, c&rsquo;est un outil super pratique pour tester des API. Tu peux envoyer des requêtes HTTP et voir les réponses, sans avoir à écrire du code compliqué. En gros, c&rsquo;est comme un couteau suisse pour les développeurs qui bossent avec des API : tu peux tester, déboguer, et documenter tes endpoints super facilement. C&rsquo;est super utile pour vérifier que tout fonctionne bien avant de mettre en ligne ton application.</p>
+<h3 id="glpi-dans-un-docker" >
+<div>
+    <a href="#glpi-dans-un-docker">
+        ##
+    </a>
+    GLPI (dans un Docker)
+</div>
+</h3>
+<p>GLPI, c&rsquo;est un outil open-source pour gérer tout ce qui concerne l&rsquo;informatique dans une entreprise. Il t&rsquo;aide à suivre les équipements, gérer les tickets de support, et organiser les tâches de maintenance. En gros, c&rsquo;est comme un tableau de bord pour tout ce qui touche à l&rsquo;IT : tu sais toujours ce qui se passe, où sont tes ressources, et quelles sont les priorités. Super utile pour garder tout en ordre et résoudre les problèmes rapidement.</p>
+<p>N&rsquo;ayant pas eu l&rsquo;autorisation de ma hiérarchie pour accéder à l&rsquo;API du GLPI de l&rsquo;entreprise, j&rsquo;en ai donc installé un en local grâce à Docker sur mon pc personnel.</p>
+<hr>
+<h2 id="premiers-pas" >
+<div>
+    <a href="#premiers-pas">
+        #
+    </a>
+    Premiers pas
+</div>
+</h2>
+<p>Dans cette première partie, le but est de prendre en main <em>Postman</em> que j&rsquo;utiliserais durant ce projet, comme expliquer plus haut, pour faire des appels à l&rsquo;API de GLPI.</p>
+<p>Comme c&rsquo;est la première fois que j&rsquo;utilise Postman, je ne comprends pas grand-chose, raison pour laquelle j&rsquo;ai une petite ToDo list.</p>
+<p>Mon but, c&rsquo;est donc :</p>
+<ul>
+<li>D&rsquo;activer l&rsquo;API</li>
+<li>Faire mes premiers call avec Postman sur l&rsquo;API de GLPI</li>
+</ul>
+<p>C&rsquo;est pas beaucoup, mais ça a été un sacré bordel, surtout au niveau de Postman.</p>
+<h2 id="activer-lapi-de-glpi" >
+<div>
+    <a href="#activer-lapi-de-glpi">
+        #
+    </a>
+    Activer l&rsquo;API de GLPI
+</div>
+</h2>
+<p>Rien de bien compliquer. Si vous avez un full accès à votre GLPI, rendez vous dans <em>Configuration (1)</em> &gt; <em>Général (2)</em> &gt; <em>API (3)</em> &gt; <em>Activer l&rsquo;API Rest (4)</em> &gt; <em>Activer la connexion avec identifiants (5)</em> et enfin cliquez sur <em>Sauvegarder</em></p>
+<p><img alt="activer l&rsquo;api" src="/posts/PFE/part1/activation_api2.png"></p>
+<p>Voilà, donc maintenant l&rsquo;API est activé, il faut ensuite rajouter un nouveau client de l&rsquo;API, c&rsquo;est le bouton qui se trouve juste en dessous.</p>
+<p>Donnez un nom (1), ensuite définir la plage d&rsquo;adresse IP qui sera utiliser par l&rsquo;API, ici, c&rsquo;est le range du Docker (2) et pour finir, faut s&rsquo;assurer que la case &ldquo;<em>Regénérer</em>&rdquo; est cochée, ce qui vous permettra d&rsquo;avoir un jeton, on en aura besoin pour plus tard.
+<img alt="activer l&rsquo;api" src="/posts/PFE/part1/client_api.png"></p>
+<h3 id="la-documentation" >
+<div>
+    <a href="#la-documentation">
+        ##
+    </a>
+    La documentation
+</div>
+</h3>
+<p>Maintenant que le client est créé et que l&rsquo;API est activer, il est temps de s&rsquo;y rendre.
+De retour sur la section consacré à l&rsquo;API, il y a une ligne appelée <em>URL de l&rsquo;API</em> avec un lien vers celles-ci, qui est (dans mon cas): <code>http://localhost:8080/apirest.php/</code></p>
+<p>En se rendant sur cette page, on a donc accès à la documentation complète de l&rsquo;API, ce qui va être très utile par la suite avec Postman.</p>
+<h2 id="utilisation-de-postman" >
+<div>
+    <a href="#utilisation-de-postman">
+        #
+    </a>
+    Utilisation de Postman
+</div>
+</h2>
+<p>Postman, ça ressemble à ça :
+<img alt="postman" src="/posts/PFE/part1/postman.png"></p>
+<p>En rouge, c&rsquo;est les requêtes HTTP. Celles qui nous intéressent sont :</p>
+<ul>
+<li><strong>GET</strong> qui a pour but d&rsquo;aller chercher une page ou de la donnée.</li>
+<li><strong>POST</strong> a pour but d&rsquo;envoyer de l&rsquo;information contenue dans le <em><strong>body</strong></em> de la requête, vers le serveur.</li>
+<li><strong>PUT</strong> va écraser une ressource avec de la nouvelle donnée, là aussi défini dans le <em><strong>body</strong></em>.</li>
+<li><strong>DELETE</strong> je pense pas avoir besoin d&rsquo;expliquer.</li>
+</ul>
+<p>En jaune, c&rsquo;est l&rsquo;URL qui comporte toutes les <em>query</em> qui sont des données au format <code>clé=valeur</code> après un <code>?</code>.</p>
+<p>Par exemple : <code>leboncoin.fr/recherche/?category=9&amp;locations=r_12</code></p>
+<p>Les champs <em>category</em> et <em>location</em> sont des <em>query</em>.</p>
+<h3 id="premier-call-vers-lapi" >
+<div>
+    <a href="#premier-call-vers-lapi">
+        ##
+    </a>
+    Premier call vers l&rsquo;API
+</div>
+</h3>
+<p>Pour initialiser la première connexion, il faut d&rsquo;abord savoir quoi faire. Donc, direction la documentation, section <em><strong>Init session</strong></em>. Cette requête va permettre de générer un token de session qui servira à l&rsquo;utilisation de l&rsquo;API. Pour générer cette requête, on va avoir besoin de certains paramètres. Il y a le choix entre 2 solutions :</p>
+<ul>
+<li>
+<p>l&rsquo;utilisation d&rsquo;un <em>user_token</em> (qui est la méthode la plus simple)</p>
+</li>
+<li>
+<p>l&rsquo;<em>App-Token</em> couplé avec un <em>login</em> et <em>password</em>.</p>
+</li>
+</ul>
+<p>On va donc prendre la première option.</p>
+<blockquote>
+<p>Pour récupérer ce token, faut aller dans <em>Administration</em> &gt; <em>Utilisateurs</em> &gt; <em>{username}</em> et, tout en bas de la page, dans la section <strong>Clef d&rsquo;accès distant</strong> devrait apparaître le <em>Jeton d&rsquo;API</em>. S&rsquo;il n&rsquo;est pas dispo, coche juste la case <em>Regénéré</em> à droite et clique sur <em>Sauvegarder</em>.</p>
+</blockquote>
+<p>On copie la clé et on retourne sur Postman.</p>
+<p><img alt="postman init session" src="/posts/PFE/part1/postman_initsession.png"></p>
+<p>Faut aller dans la section <em>Authorization</em> et dans le menu déroulant <strong>Type</strong> chercher <em><strong>API KEY</strong></em>. Pour la Key, faut donc écrire <em>user_token</em> et dans Value, coller la clé copiée juste avant.</p>
+<p>Ensuite dans <em><strong>Params</strong></em> rajoute l&rsquo;<strong>app_token</strong> généré plus haut en activant l&rsquo;API.</p>
+<p>Et si tout est bon tu devrais dois un token de session qui apparaît dans le <em>Body</em> juste en dessous et qui se régénère à chaque éxecusion de la commande.</p>
+<p>Comme ceci:
+<img alt="postman session token" src="/posts/PFE/part1/postman_session_token.png"></p>
+<p>Ce token va être utile pour les autres commandes que je vais devoir exécuter, donc faut le garder dans un coin.</p>
+<h3 id="lister-les-tous-les-ordis" >
+<div>
+    <a href="#lister-les-tous-les-ordis">
+        ##
+    </a>
+    Lister les tous les ordis
+</div>
+</h3>
+<p>Pour que ça puisse fonctionner, il faut bien évidemment une liste d&rsquo;ordis créés au préaliable. J&rsquo;en ai créé 4, on devrait donc en voir 4 de listé.</p>
+<p>Donc le but, c&rsquo;est de lister tous les items, pour ce faire, direction la documentation une nouvelle fois dans la section <strong>Get all items</strong>. L&rsquo;url est <code>apirest.php/:itemtype/</code>. Il faut logicement remplacer <code>:itemtype</code> par <code>Computer</code> vu que c&rsquo;est ce que je cherche à afficher ici.</p>
+<p>l&rsquo;url devrait donc ressembler à un truc comme ça : <code>http://localhost:8080/apirest.php/Computer</code></p>
+<p><strong>Paramètres :</strong></p>
+<ul>
+<li>Session-Token : qui est obligatoire.</li>
+<li>App-Token : qu&rsquo;est pas obligatoire, mais si je ne le mets pas ça ne fonctionne pas&hellip;</li>
+<li>Session_token : c&rsquo;est pas indiquer dans la doc, mais j&rsquo;ai un message d&rsquo;erreur si je ne le met pas&hellip;</li>
+</ul>
+<p>Après avoir ajouté tout ça, et cliquer sur <strong>Send</strong> j&rsquo;obtiens donc un résultat, que voici :
+<img alt="postman list d&rsquo;items" src="/posts/PFE/part1/postman_get_items.png"></p>
+<p>Okay ! Parfait, ça fonctionne ! On va pouvoir passer à la suite, c-à-d <em>ajouter</em> un nouvel ordinateur dans la liste.</p>
+<h3 id="ajouter-un-nouvel-ordinateur" >
+<div>
+    <a href="#ajouter-un-nouvel-ordinateur">
+        ##
+    </a>
+    Ajouter un nouvel ordinateur
+</div>
+</h3>
+<p>Pour ajouter un objet, il va falloir changer le type de requête, faut passer en mode <strong>POST</strong>. L&rsquo;url reste le même qu&rsquo;avant, les paramètres de query sont les mêmes cependant maintenant faut définir le pc qu&rsquo;on veut créer.</p>
+<p>Donc pour ça faut aller dans <strong>Body</strong> et sélectionner <em>raw</em> et c&rsquo;est là dedans qu&rsquo;on va pouvoir personnaliser notre premier pc créer via l&rsquo;API.</p>
+<p>et j&rsquo;ai ajouter cet input :</p>
+<pre><code>{
+    &quot;input&quot;: {
+        &quot;name&quot;: &quot;pc test api&quot;,
+        &quot;users_id_tech&quot;: 4,
+        &quot;states_id&quot;: 1
+    }
+}
+</code></pre>
+<p>Ce qui m&rsquo;a rendu ce résultat :
+<img alt="pc créé" src="/posts/PFE/part1/postman_creation_pc.png"></p>
+<p>Donc maintenant il ne reste plus qu&rsquo;à vérifier qu&rsquo;il est bien présent dans la liste des pc de GLPI.</p>
+<p><img alt="pc créé dans GLPI" src="/posts/PFE/part1/GLPI_pc.png"></p>
+<p>Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&rsquo;API !!</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item disabled">
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/posts/host_github/host-son-site-sur-github/">🌐 Héberger son site gratuitement sur GitHub</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+        <ul class="language-select">
+    
+    
+    
+        
+    
+
+    
+        
+            <li>Français</li>
+        
+    
+        
+            <li><a href="/en/">English</a></li>
+        
+    
+</ul>
+
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            © Alfi, 2024
+            
+        </div>
+        <div style="display:flex;align-items: center">
+            
+            
+            
+            
+            
+            
+        </div>
+        <div>
+            Propulsé par <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>, thème <a target="_blank" rel="noopener noreferrer" href="https://github.com/Junyi-99/hugo-theme-anubis2">Anubis2</a>.<br>
+            
+
+        </div>
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=https://afidalgo.fr/ class="p-name u-url url fn" rel="me"></a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>
