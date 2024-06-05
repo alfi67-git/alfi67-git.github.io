@@ -197,6 +197,14 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;p&gt;Donc maintenant il ne reste plus qu&amp;rsquo;à vérifier qu&amp;rsquo;il est bien présent dans la liste des pc de GLPI.&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&amp;rsquo;API !!&lt;/p&gt;
+&lt;h3 id=&#34;modifier-un-élément&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#modifier-un-%c3%a9l%c3%a9ment&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Modifier un élément
+&lt;/div&gt;
+&lt;/h3&gt;
 &lt;p&gt;Bon c&amp;rsquo;est super, mais le but de l&amp;rsquo;application c&amp;rsquo;est aussi de pouvoir modifier des choses.&lt;/p&gt;
 &lt;p&gt;Pour modifier c&amp;rsquo;est rien de bien compliqué, on va prendre l&amp;rsquo;exact même URL que pour l&amp;rsquo;ajout, on va modifier la commande par &lt;strong&gt;PUT&lt;/strong&gt; et dans le body on va mettre ceci (en ayant repéré l&amp;rsquo;id de l&amp;rsquo;objet que l&amp;rsquo;on souhaite modifier ):&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{

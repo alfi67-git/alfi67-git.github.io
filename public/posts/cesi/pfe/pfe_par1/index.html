@@ -488,6 +488,7 @@
         <li><a href="#premier-call-vers-lapi">Premier call vers l&rsquo;API</a></li>
         <li><a href="#lister-les-tous-les-ordis">Lister les tous les ordis</a></li>
         <li><a href="#ajouter-un-nouvel-ordinateur">Ajouter un nouvel ordinateur</a></li>
+        <li><a href="#modifier-un-élément">Modifier un élément</a></li>
       </ul>
     </li>
   </ul>
@@ -696,6 +697,14 @@ De retour sur la section consacrée à l&rsquo;API, il y a une ligne appelée <e
 <p>Donc maintenant il ne reste plus qu&rsquo;à vérifier qu&rsquo;il est bien présent dans la liste des pc de GLPI.</p>
 <p><img alt="pc créé dans GLPI" src="/posts/PFE/part1/GLPI_pc.png"></p>
 <p>Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&rsquo;API !!</p>
+<h3 id="modifier-un-élément" >
+<div>
+    <a href="#modifier-un-%c3%a9l%c3%a9ment">
+        ##
+    </a>
+    Modifier un élément
+</div>
+</h3>
 <p>Bon c&rsquo;est super, mais le but de l&rsquo;application c&rsquo;est aussi de pouvoir modifier des choses.</p>
 <p>Pour modifier c&rsquo;est rien de bien compliqué, on va prendre l&rsquo;exact même URL que pour l&rsquo;ajout, on va modifier la commande par <strong>PUT</strong> et dans le body on va mettre ceci (en ayant repéré l&rsquo;id de l&rsquo;objet que l&rsquo;on souhaite modifier ):</p>
 <pre><code>{

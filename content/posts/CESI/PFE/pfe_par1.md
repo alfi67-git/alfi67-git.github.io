@@ -159,6 +159,8 @@ Donc maintenant il ne reste plus qu'à vérifier qu'il est bien présent dans la
 
 Ça y est ! Notre premier objet a été créé dans GLPI grâce à l'API !!
 
+### Modifier un élément
+
 Bon c'est super, mais le but de l'application c'est aussi de pouvoir modifier des choses.
 
 Pour modifier c'est rien de bien compliqué, on va prendre l'exact même URL que pour l'ajout, on va modifier la commande par **PUT** et dans le body on va mettre ceci (en ayant repéré l'id de l'objet que l'on souhaite modifier ):
