@@ -22,11 +22,11 @@ Il existe une solution pour héberger votre site web gratuitement avec GitHub, c
 ## Mise en place du repository
 Dans un premier temps, rendez-vous sur Github et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.
 
-![new-repo](/posts/host-github/new-repo.png)
+![new-repo](/posts/host_github/new-repo.png)
 
 Une nouvelle page apparaît ensuite, votre repo doit avoir le nom *username*.github.io, faite également en sorte qu'il soit *public*. Vous pouvez donner une description à votre repository, mais ça n'est pas obligatoire.
 
-![name-repo](/posts/host-github/name-repo.png)
+![name-repo](/posts/host_github/name-repo.png)
 
 À présent, il faut push votre dossier sur lequel vous avez durement travaillé. 
 
@@ -36,7 +36,7 @@ Une fois votre repo créé et vos fichier uploadés, il est temps de publier vot
 
 Dans les paramètres, rendez-vous dans la partie *pages*.
 
-![pages-github](/posts/host-github/settings-repo.png)
+![pages-github](/posts/host_github/settings-repo.png)
 
 Dans la partie **Build and deployment** sélectionnez la *Source*, qui est: 
 
@@ -47,7 +47,7 @@ Dans la partie **Build and deployment** sélectionnez la *Source*, qui est:
 
 Sélectionnez également la *Branch* de votre repo et sauvegardez. Dans quelques instant, un message vous disant que votre site est publié devrait apparaître.
 
-![site-published](/posts/host-github/site_published.png)
+![site-published](/posts/host_github/site_published.png)
 
 Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !
 
@@ -66,7 +66,7 @@ Ici, nous prendrons le cas d'OVH puisque c'est celui que j'utilise, mais les ajo
 
 Avant tout, il est recommandé de renseigner votre nom de domaine avant de procéder aux divers ajouts. Une fois renseigner, cliquez sur *Save* et attendez quelques secondes que la vérification DNS s'effectue.
 
-![site-published](/posts/host-github/subdomain.png)
+![site-published](/posts/host_github/subdomain.png)
 
 ### Configurer la résolution de nom
 Il à présent temps de voir un oeil au niveau de la configuration de notre nom de domaine.
@@ -79,7 +79,7 @@ Rendez-vous sur le site de votre fournisseur de nom de domaine, sélectionnez vo
     2.1. Laissez le sous domaine vide
 
     2.2. Définissez la cible comme `185.199.108.153`
-![ajout d'une zone](/posts/host-github/zone-A.png)
+![ajout d'une zone](/posts/host_github/zone-A.png)
 
 3. Ajouter un **CNAME** (similaire au champ A, mais permet de définir un nom alternatif) 
 
@@ -87,14 +87,14 @@ Rendez-vous sur le site de votre fournisseur de nom de domaine, sélectionnez vo
 
     3.2. Définissez la cible comme `pseudogit.github.io`
 
-![ajout d'une zone](/posts/host-github/CNAME.png)
+![ajout d'une zone](/posts/host_github/CNAME.png)
 
 Et si vous retournez sur GitHub vous devrez avoir un message tout en haut de la page vous précisant que votre site est bien publié et fonctionne avec le nom de domaine affilié.
 
-![site web publié](/posts/host-github/published2.png)
+![site web publié](/posts/host_github/published2.png)
 
 Et voilà, votre site est publié avec un nom de domaine personnalisé, le tout gratuitement !
 
-![bravo vous êtes sur internet](/posts/host-github/bravo.gif)
+![bravo vous êtes sur internet](/posts/host_github/bravo.gif)
 
 À bientôt pour de nouvelles aventures sur les internets 🤓 !
