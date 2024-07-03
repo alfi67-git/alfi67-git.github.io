@@ -106,3 +106,15 @@ unsafe = true # true | false; Enable unsafe mode to have a better experience
 
 [markup.highlight]
 style = 'base16-snazzy' # Highlight.js style
+
+[params.UmamiAnalytics]
+enabled = true
+dnt = false
+id = "ab9a5196-cb7a-45e2-bb49-1531b197361d"                                            # Website ID
+datacache = false
+url = "https://cloud.umami.is/script.js"
+shareUrl = "https://cloud.umami.is/share/ciCkxgQAJI5bdlKU/www.afidalgo.fr"
+
+[params.GoogleAnalytics]
+enabled = true
+gtag = "G-TAGEXAMPLE"
