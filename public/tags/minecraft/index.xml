@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minecraft on Lab d&#39;Alfi</title>
+    <link>/tags/minecraft/</link>
+    <description>Lab d&#39;Alfi (Minecraft)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr</language>
+    
+
+    
+    <lastBuildDate>Fri, 08 Nov 2024 16:05:12 +0100</lastBuildDate>
+    
+    <atom:link href="/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>🛠️ Installer et monitorer un serveur minecraft avec Crafty Controller</title>
+      <link>/posts/projets/crafty/</link>
+      <pubDate>Fri, 08 Nov 2024 16:05:12 +0100</pubDate>
+      
+      <guid>/posts/projets/crafty/</guid>
+      <description>&lt;p&gt;Aujourd&amp;rsquo;hui, on va voir comment installer un serveur Minecraft et le monitorer avec une interface web nommé &lt;em&gt;Crafty Controller&lt;/em&gt; le tout fonctionnant sous Docker installé sur un serveur Debian.&lt;/p&gt;
+&lt;h2 id=&#34;les-outils-utilisés&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#les-outils-utilis%c3%a9s&#34;&gt;
+        #
+    &lt;/a&gt;
+    Les outils utilisés
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;h3 id=&#34;cest-quoi-dockerhttpsdockercom-&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#cest-quoi-dockerhttpsdockercom-&#34;&gt;
+        ##
+    &lt;/a&gt;
+    C&amp;rsquo;est quoi &lt;a href=&#34;https://docker.com&#34;&gt;Docker&lt;/a&gt; ?
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Pour faire ultra simple, docker est une application de virtualisation.
+De la même façon que l&amp;rsquo;on peut virtualiser des Systèmes d&amp;rsquo;Exploitations, avec VirtualBox, VMware, etc, avec Docker on peut virtualiser des applications.
+Utiliser Docker à plusieurs avantages pour ce projet:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Se déployer rapidement&lt;/li&gt;
+&lt;li&gt;Isoler l&amp;rsquo;environnements&lt;/li&gt;
+&lt;li&gt;La portabilité&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cest-quoi-craftyhttpscraftycontrolcom-&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#cest-quoi-craftyhttpscraftycontrolcom-&#34;&gt;
+        ##
+    &lt;/a&gt;
+    C&amp;rsquo;est quoi &lt;a href=&#34;https://craftycontrol.com&#34;&gt;Crafty&lt;/a&gt; ?
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Crafty Controller, ou comme je l&amp;rsquo;appelle plus simplement &lt;em&gt;Crafty&lt;/em&gt;, est un projet gratuit et open-source, qui permet, à l&amp;rsquo;aide d&amp;rsquo;une interface web, d&amp;rsquo;administrer un ou plusieurs serveur Minecraft.&lt;/p&gt;
+&lt;h2 id=&#34;installation&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#installation&#34;&gt;
+        #
+    &lt;/a&gt;
+    Installation
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;C&amp;rsquo;est possible d&amp;rsquo;installer Crafty de différentes façons. Soit directement sur le système (mais c&amp;rsquo;est chiant et à gérer c&amp;rsquo;est un bordel, je le sais d&amp;rsquo;expérience) ou avec Docker et docker compose (qui pour le coup est beaucoup plus simple).&lt;/p&gt;
+&lt;p&gt;Pour son installation avec Docker, il y a différentes façon de l&amp;rsquo;installer. Que ce soit avec le CLI, avec le hub ou encore avec Docker Compose.&lt;/p&gt;
+&lt;p&gt;Vu que l&amp;rsquo;équipe de Crafty proposent un fichier docker-compose tout prêt, on va utiliser ça.&lt;/p&gt;
+&lt;p&gt;Voici donc le fichier de configuration de base pour Crafty.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version: &amp;#39;3&amp;#39;
+
+services:
+  crafty:
+    container_name: crafty_container
+    image: registry.gitlab.com/crafty-controller/crafty-4:latest
+    restart: always
+    environment:
+        - TZ=Etc/UTC
+    ports:
+        - &amp;#34;8443:8443&amp;#34; # HTTPS
+        - &amp;#34;8123:8123&amp;#34; # DYNMAP
+        - &amp;#34;19132:19132/udp&amp;#34; # BEDROCK
+        - &amp;#34;25500-25600:25500-25600&amp;#34; # MC SERV PORT RANGE
+    volumes:
+        - ./docker/backups:/crafty/backups
+        - ./docker/logs:/crafty/logs
+        - ./docker/servers:/crafty/servers
+        - ./docker/config:/crafty/app/config
+        - ./docker/import:/crafty/import
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On va donc créer un fichier du nom de &lt;code&gt;docker-compose.yml&lt;/code&gt; et coller les recommendation des devs dans le fichier.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bien penser à changer la time zone en : Etc/Europe.
+J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de changer ce paramètre.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On va globalement pas trop toucher à ce fichier, qui est bien dans l&amp;rsquo;ensemble. On peut donc lancer docker avec la commande: &lt;code&gt;docker-compose up -d &amp;amp;&amp;amp; docker-compose logs -f&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Vu que crafty est bien fait, l&amp;rsquo;installation va se faire toute seule et prend normalement que quelques secondes&lt;/p&gt;
+&lt;p&gt;On peut d&amp;rsquo;ailleurs voir sur la capture suivante l&amp;rsquo;installation s&amp;rsquo;effectuer:
+&lt;img alt=&#34;installation de crafty à l&amp;rsquo;aide de docker&#34; src=&#34;http://localhost:1313/posts/images/crafty/docker1.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;interface-de-crafty&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#interface-de-crafty&#34;&gt;
+        #
+    &lt;/a&gt;
+    Interface de Crafty
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;h3 id=&#34;première-connexion&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#premi%c3%a8re-connexion&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Première connexion
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Maintenant que notre installation s&amp;rsquo;est bien déroulée, il est temps d&amp;rsquo;aller jeter un oeil au niveau de l&amp;rsquo;interface web.
+Crafty est accessible via &lt;code&gt;localhost&lt;/code&gt;, &lt;code&gt;127.0.0.1&lt;/code&gt; ou l&amp;rsquo;&lt;code&gt;ip de la machine&lt;/code&gt;. Mais toujours avec &lt;strong&gt;https://&lt;/strong&gt; devant.
+Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://127.0.0.1:8443/&lt;/code&gt;, mais en temps normal, je rentre l&amp;rsquo;adresse ip du serveur où est hébergé crafty.&lt;/p&gt;
+&lt;p&gt;On se retrouve donc face à set interface:
+&lt;img alt=&#34;page de connexion à crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/crafty_ui.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Pour une première connexion, il faut utiliser le username &lt;code&gt;admin&lt;/code&gt; et le &lt;code&gt;mot de passe&lt;/code&gt; générer dans un fichier situer ici : &lt;code&gt;app/config/default-creds.txt&lt;/code&gt; de façon général. Mais bon, vu que je trouvais pas j&amp;rsquo;ai fini par lancé une recherche afin de trouver le fichier, qui finalement était pas si loin que ça:
+&lt;img alt=&#34;mot de passe de connexion session admin&#34; src=&#34;http://localhost:1313/posts/images/crafty/passwd.png&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;À chaque fois que j&amp;rsquo;ai essayé d&amp;rsquo;accèder au compte admin pour une première connexion, j&amp;rsquo;ai TOUJOURS un message d&amp;rsquo;erreur où la connexion est impossible. Je sais pas si c&amp;rsquo;est moi qui suis maudit ou si c&amp;rsquo;est buggé 😮‍💨.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Cette fois-ci j&amp;rsquo;avais un petit peu d&amp;rsquo;espoir que ça fonctionne, mais comme à chaque installation, j&amp;rsquo;ai une erreur &lt;code&gt;Incorrect username or password&lt;/code&gt;. Donc on va utiliser la méthode &lt;code&gt;Forgot Password&lt;/code&gt; qui va activer un compte temporaire qui nous pemettra de définir le mot de passe de notre choix pour le compte &lt;code&gt;admin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Lorsque l&amp;rsquo;on clic sur le boutton &lt;code&gt;Forgot Password&lt;/code&gt;, le compte &lt;code&gt;Lockout&lt;/code&gt; s&amp;rsquo;active pendant 1H avec un mot de passe temporaire, trouvable dans les logs du container:
+&lt;code&gt;docker logs {id container}&lt;/code&gt;
+&lt;img alt=&#34;login et password du compte auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/lockout.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Une fois ces identifiants rentré, cela nous donne donc accès à l&amp;rsquo;interface permettant de modifier le mot de passe admin.&lt;/p&gt;
+&lt;p&gt;Voici à quoi elle ressemble:
+&lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;création-dun-serveur&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#cr%c3%a9ation-dun-serveur&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Création d&amp;rsquo;un serveur
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Bien ! Maintenant qu&amp;rsquo;on a modifier notre password admin et qu&amp;rsquo;on s&amp;rsquo;est connecté à l&amp;rsquo;interface principale, on va pouvoir passer à la création d&amp;rsquo;un serveur.
+Avant tout, bienvenue sur l&amp;rsquo;interface de Crafty Controller.&lt;/p&gt;
+&lt;p&gt;Once you are logged in you will see this welcome screen. This is your dashboard. From here you can access settings pages and create servers. When you have servers created, you will see them appear here.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
