@@ -6,6 +6,9 @@
     <description>Lab d&#39;Alfi (CESI)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
+    
+
+    
     <lastBuildDate>Fri, 24 May 2024 23:38:17 +0200</lastBuildDate>
     
     <atom:link href="/categories/cesi/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +16,10 @@
     
     <item>
       <title>🎓 Projet de Fin d&#39;Étude | part1 Les premiers pas</title>
-      <link>/posts/cesi/pfe/pfe_par1/</link>
+      <link>/posts/cesi/pfe/pfe_part1/</link>
       <pubDate>Fri, 24 May 2024 23:38:17 +0200</pubDate>
       
-      <guid>/posts/cesi/pfe/pfe_par1/</guid>
+      <guid>/posts/cesi/pfe/pfe_part1/</guid>
       <description>&lt;p&gt;Dans le cadre de la validation de mon cursus d&amp;rsquo;étude, je dois réaliser un projet de fin d&amp;rsquo;études.
 Projet qui doit être réalisé au sein de l&amp;rsquo;entreprise où je me trouve.&lt;/p&gt;
 &lt;p&gt;Le projet consiste à créer une application Android qui permet, via l&amp;rsquo;API de GLPI, de mettre à jour la base de données.&lt;/p&gt;
@@ -89,10 +92,10 @@ Projet qui doit être réalisé au sein de l&amp;rsquo;entreprise où je me trou
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Rien de bien compliqué. Si vous avez un full accès à votre GLPI, rendez vous dans &lt;em&gt;Configuration (1)&lt;/em&gt; &amp;gt; &lt;em&gt;Général (2)&lt;/em&gt; &amp;gt; &lt;em&gt;API (3)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer l&amp;rsquo;API Rest (4)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer la connexion avec identifiants (5)&lt;/em&gt; et enfin cliquez sur &lt;em&gt;Sauvegarder&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/activation_api2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/activation_api2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Voilà, donc maintenant l&amp;rsquo;API est activé, il faut ensuite rajouter un nouveau client de l&amp;rsquo;API, c&amp;rsquo;est le bouton qui se trouve juste en dessous.&lt;/p&gt;
 &lt;p&gt;Donner un nom (1), ensuite définir la plage d&amp;rsquo;adresse IP qui sera utiliser par l&amp;rsquo;API, ici, c&amp;rsquo;est le range du Docker (2) et pour finir, faut s&amp;rsquo;assurer que la case &amp;ldquo;&lt;em&gt;Regénérer&lt;/em&gt;&amp;rdquo; est cochée, ce qui permettra d&amp;rsquo;avoir un jeton, on en aura besoin pour plus tard.
-&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/client_api.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/client_api.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;la-documentation&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#la-documentation&#34;&gt;
@@ -113,7 +116,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Postman, ça ressemble à ça :
-&lt;img alt=&#34;postman&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;En rouge, c&amp;rsquo;est les requêtes HTTP. Celles qui nous intéressent sont :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt; qui a pour but d&amp;rsquo;aller chercher une page ou de la donnée.&lt;/li&gt;
@@ -146,12 +149,12 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;p&gt;Pour récupérer ce token, faut aller dans &lt;em&gt;Administration&lt;/em&gt; &amp;gt; &lt;em&gt;Utilisateurs&lt;/em&gt; &amp;gt; &lt;em&gt;{username}&lt;/em&gt; et, tout en bas de la page, dans la section &lt;strong&gt;Clef d&amp;rsquo;accès distant&lt;/strong&gt; doit apparaître le &lt;em&gt;Jeton d&amp;rsquo;API&lt;/em&gt;. S&amp;rsquo;il n&amp;rsquo;est pas dispo, coche juste la case &lt;em&gt;Regénéré&lt;/em&gt; à droite et clique sur &lt;em&gt;Sauvegarder&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;On copie la clé et on retourne sur Postman.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;postman init session&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_initsession.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;postman init session&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_initsession.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Faut aller dans la section &lt;em&gt;Authorization&lt;/em&gt; et dans le menu déroulant &lt;strong&gt;Type&lt;/strong&gt; chercher &lt;em&gt;&lt;strong&gt;API KEY&lt;/strong&gt;&lt;/em&gt;. Pour la Key, faut donc écrire &lt;em&gt;user_token&lt;/em&gt; et dans Value, coller la clé copiée juste avant.&lt;/p&gt;
 &lt;p&gt;Ensuite dans &lt;em&gt;&lt;strong&gt;Params&lt;/strong&gt;&lt;/em&gt; rajoute l&amp;rsquo;&lt;strong&gt;app_token&lt;/strong&gt; généré plus haut en activant l&amp;rsquo;API.&lt;/p&gt;
 &lt;p&gt;Et si tout est bon tu devrais dois un token de session qui apparaît dans le &lt;em&gt;Body&lt;/em&gt; juste en dessous et qui se régénère à chaque exécusion de la commande.&lt;/p&gt;
 &lt;p&gt;Comme ceci:
-&lt;img alt=&#34;postman session token&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_session_token.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman session token&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_session_token.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ce token va être utile pour les autres commandes que je vais devoir exécuter, donc faut le garder dans un coin.&lt;/p&gt;
 &lt;h3 id=&#34;lister-les-tous-les-ordis&#34; &gt;
 &lt;div&gt;
@@ -171,7 +174,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;li&gt;Session_token : c&amp;rsquo;est pas indiqué dans la doc, mais j&amp;rsquo;ai un message d&amp;rsquo;erreur si j&amp;rsquo;le mets pas&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Après avoir ajouté tout ça, et cliqué sur &lt;strong&gt;Send&lt;/strong&gt; j&amp;rsquo;obtiens donc un résultat, que voici :
-&lt;img alt=&#34;postman list d&amp;rsquo;items&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_get_items.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman list d&amp;rsquo;items&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_get_items.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Okay ! Parfait, ça fonctionne ! On va pouvoir passer à la suite, c-à-d &lt;em&gt;ajouter&lt;/em&gt; un nouvel ordinateur dans la liste.&lt;/p&gt;
 &lt;h3 id=&#34;ajouter-un-nouvel-ordinateur&#34; &gt;
 &lt;div&gt;
@@ -193,9 +196,9 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ce qui m&amp;rsquo;a rendu ce résultat :
-&lt;img alt=&#34;pc créé&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/postman_creation_pc.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc créé&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_creation_pc.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Donc maintenant il ne reste plus qu&amp;rsquo;à vérifier qu&amp;rsquo;il est bien présent dans la liste des pc de GLPI.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&amp;rsquo;API !!&lt;/p&gt;
 &lt;h3 id=&#34;modifier-un-élément&#34; &gt;
 &lt;div&gt;
@@ -215,9 +218,9 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Une fois la commande exécutée, on devrait avoir un message comme suivant :
-&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/GLPI_pc_update.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc_update.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et pour vérifier que la commande a bien été prise en compte, il suffit de se rendre dans GLPI.
-&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/PFE/part1/GLPI_pc_update2.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc_update2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà ! Je sais à présent :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Me connecter à l&amp;rsquo;API&lt;/li&gt;

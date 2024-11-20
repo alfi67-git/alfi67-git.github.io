@@ -6,6 +6,9 @@
     <description>Lab d&#39;Alfi (Hello World)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
+    
+
+    
     <lastBuildDate>Mon, 20 May 2024 18:00:24 +0200</lastBuildDate>
     
     <atom:link href="/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />

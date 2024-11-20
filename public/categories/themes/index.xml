@@ -6,17 +6,20 @@
     <description>Lab d&#39;Alfi (Themes)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
-    <lastBuildDate>Fri, 24 May 2024 23:38:17 +0200</lastBuildDate>
+    
+
+    
+    <lastBuildDate>Tue, 19 Nov 2024 17:40:04 +0100</lastBuildDate>
     
     <atom:link href="/categories/themes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>PFE</title>
-      <link>/posts/cesi/pfe/</link>
-      <pubDate>Fri, 24 May 2024 23:38:17 +0200</pubDate>
+      <title>Crafty</title>
+      <link>/posts/project/crafty/</link>
+      <pubDate>Tue, 19 Nov 2024 17:40:04 +0100</pubDate>
       
-      <guid>/posts/cesi/pfe/</guid>
+      <guid>/posts/project/crafty/</guid>
       <description></description>
     </item>
     

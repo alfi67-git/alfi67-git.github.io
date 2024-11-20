@@ -9,17 +9,17 @@
     
 
     
-    <lastBuildDate>Fri, 08 Nov 2024 16:05:12 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2024 16:05:12 +0100</lastBuildDate>
     
     <atom:link href="/categories/projets/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>🛠️ Installer et monitorer un serveur minecraft avec Crafty Controller</title>
-      <link>/posts/projets/crafty/</link>
-      <pubDate>Fri, 08 Nov 2024 16:05:12 +0100</pubDate>
+      <link>/posts/project/crafty/</link>
+      <pubDate>Tue, 19 Nov 2024 16:05:12 +0100</pubDate>
       
-      <guid>/posts/projets/crafty/</guid>
+      <guid>/posts/project/crafty/</guid>
       <description>&lt;p&gt;Aujourd&amp;rsquo;hui, on va voir comment installer un serveur Minecraft et le monitorer avec une interface web nommé &lt;em&gt;Crafty Controller&lt;/em&gt; le tout fonctionnant sous Docker installé sur un serveur Debian.&lt;/p&gt;
 &lt;h2 id=&#34;les-outils-utilisés&#34; &gt;
 &lt;div&gt;
@@ -66,27 +66,27 @@ Utiliser Docker à plusieurs avantages pour ce projet:&lt;/p&gt;
 &lt;p&gt;Pour son installation avec Docker, il y a différentes façon de l&amp;rsquo;installer. Que ce soit avec le CLI, avec le hub ou encore avec Docker Compose.&lt;/p&gt;
 &lt;p&gt;Vu que l&amp;rsquo;équipe de Crafty proposent un fichier docker-compose tout prêt, on va utiliser ça.&lt;/p&gt;
 &lt;p&gt;Voici donc le fichier de configuration de base pour Crafty.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version: &amp;#39;3&amp;#39;
-
-services:
-  crafty:
-    container_name: crafty_container
-    image: registry.gitlab.com/crafty-controller/crafty-4:latest
-    restart: always
-    environment:
-        - TZ=Etc/UTC
-    ports:
-        - &amp;#34;8443:8443&amp;#34; # HTTPS
-        - &amp;#34;8123:8123&amp;#34; # DYNMAP
-        - &amp;#34;19132:19132/udp&amp;#34; # BEDROCK
-        - &amp;#34;25500-25600:25500-25600&amp;#34; # MC SERV PORT RANGE
-    volumes:
-        - ./docker/backups:/crafty/backups
-        - ./docker/logs:/crafty/logs
-        - ./docker/servers:/crafty/servers
-        - ./docker/config:/crafty/app/config
-        - ./docker/import:/crafty/import
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On va donc créer un fichier du nom de &lt;code&gt;docker-compose.yml&lt;/code&gt; et coller les recommendation des devs dans le fichier.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff6ac1&#34;&gt;version&lt;/span&gt;: &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#39;3&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ff6ac1&#34;&gt;services&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#ff6ac1&#34;&gt;crafty&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;container_name&lt;/span&gt;: crafty_container
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;image&lt;/span&gt;: registry.gitlab.com/crafty-controller/crafty-4:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;restart&lt;/span&gt;: always
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;environment&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - TZ=Etc/UTC
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;ports&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;8443:8443&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#78787e&#34;&gt;# HTTPS&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;8123:8123&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#78787e&#34;&gt;# DYNMAP&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;19132:19132/udp&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#78787e&#34;&gt;# BEDROCK&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - &lt;span style=&#34;color:#5af78e&#34;&gt;&amp;#34;25500-25600:25500-25600&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#78787e&#34;&gt;# MC SERV PORT RANGE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ff6ac1&#34;&gt;volumes&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - ./docker/backups:/crafty/backups
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - ./docker/logs:/crafty/logs
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - ./docker/servers:/crafty/servers
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - ./docker/config:/crafty/app/config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        - ./docker/import:/crafty/import
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On va donc créer un fichier du nom de &lt;code&gt;docker-compose.yml&lt;/code&gt; et coller les recommendation des devs dans le fichier.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Bien penser à changer la time zone en : Etc/Europe.
 J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de changer ce paramètre.&lt;/p&gt;
@@ -128,6 +128,18 @@ Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://1
 &lt;p&gt;Une fois ces identifiants rentré, cela nous donne donc accès à l&amp;rsquo;interface permettant de modifier le mot de passe admin.&lt;/p&gt;
 &lt;p&gt;Voici à quoi elle ressemble:
 &lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;dashboard&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#dashboard&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Dashboard
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;Maintenant qu&amp;rsquo;on est connecté, nous voici face à la page d&amp;rsquo;accueil. C&amp;rsquo;est le dashboard.
+D&amp;rsquo;ici on peut accéder aux paramètres et créer des serveurs.
+Si des serveurs sont crées, ils s&amp;rsquo;afficheront ici.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;dashboard crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/interface_crafty.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;création-dun-serveur&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#cr%c3%a9ation-dun-serveur&#34;&gt;
@@ -136,9 +148,35 @@ Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://1
     Création d&amp;rsquo;un serveur
 &lt;/div&gt;
 &lt;/h3&gt;
-&lt;p&gt;Bien ! Maintenant qu&amp;rsquo;on a modifier notre password admin et qu&amp;rsquo;on s&amp;rsquo;est connecté à l&amp;rsquo;interface principale, on va pouvoir passer à la création d&amp;rsquo;un serveur.
-Avant tout, bienvenue sur l&amp;rsquo;interface de Crafty Controller.&lt;/p&gt;
-&lt;p&gt;Once you are logged in you will see this welcome screen. This is your dashboard. From here you can access settings pages and create servers. When you have servers created, you will see them appear here.&lt;/p&gt;</description>
+&lt;p&gt;Avec Crafty, il est possible de choisir entre un serveur Minecraft Java ou Bedrock.
+Choix à définir en sélectionnant Minecraft-Bedrock ou Minecraft-Java au dessus du panneau &lt;strong&gt;Create New Server&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Voici l&amp;rsquo;outil qui permet de créer des serveurs. Il permet de sélectionner plusieurs options personnalisable pour notre serveur.
+&lt;img alt=&#34;créer un nouveau serveur&#34; src=&#34;http://localhost:1313/posts/images/crafty/server-builder2.png&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Server Type&lt;/strong&gt;: Permet de choisir entre soit la configuration du serveur minecraft ou d&amp;rsquo;un serveur proxie.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server Select&lt;/strong&gt;: au fil des années, plusieurs type de serveur se sont créer, &lt;em&gt;vanilla&lt;/em&gt;, &lt;em&gt;paper&lt;/em&gt;, &lt;em&gt;fabric&lt;/em&gt;, &lt;em&gt;folia&lt;/em&gt;, &lt;em&gt;forge-installer&lt;/em&gt; et &lt;em&gt;purpur&lt;/em&gt;. (Paper est recommandé si l&amp;rsquo;installation de plugins est souhaité)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server Version&lt;/strong&gt;: sélectionne la version du jeu sur lequel le serveur doit tourner.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server Name&lt;/strong&gt;: Nom que vous souhaitez donner au serveur (obvious celui-ci☝🤓).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minimum/Maximum Memory, Server Port&lt;/strong&gt;: Détermine la minimum et le maximum de ram que vous souhaitez allouer au serveur. Vivement recommandé de mettre au minimum 2Go et 6Go au max pour une &lt;strong&gt;bonne&lt;/strong&gt; utilisation entre ami.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Bien penser à changer le port, des bots qui scannent les ports Minecraft sont fréquent. Exemple: Remplacer &lt;strong&gt;25565&lt;/strong&gt; par &lt;strong&gt;25570&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;démarrage-du-serveur&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#d%c3%a9marrage-du-serveur&#34;&gt;
+        ##
+    &lt;/a&gt;
+    Démarrage du serveur
+&lt;/div&gt;
+&lt;/h3&gt;
+&lt;p&gt;On peut maintenant démarrer le serveur en cliquant sur le bouton &amp;lsquo;&lt;strong&gt;Start&lt;/strong&gt;&amp;rsquo; ou depuis le dashboard en appuyant sur le petit triangle.
+Si c&amp;rsquo;est le premier démarrage du serveur, il va demander d&amp;rsquo;accepter les &lt;a href=&#34;https://www.minecraft.net/fr-fr/eula&#34;&gt;EULA de Minecraft&lt;/a&gt;.
+&lt;img alt=&#34;EULA Minecraft&#34; src=&#34;http://localhost:1313/posts/images/crafty/minecraft-eula.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Une fois les EULA acceptée on peut une nouvelle fois lancer le serveur et s&amp;rsquo;assurer de bien avoir ouvert le port défini plus haut qui est le port de connexion Minecraft et qui permettra à vos amis de se connecter à votre serveur.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Et voilà, vous savez à présent installer Crafty Controller avec Docker et lancer votre premier serveur Minecraft !&lt;/p&gt;</description>
     </item>
     
   </channel>

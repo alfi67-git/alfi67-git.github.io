@@ -6,6 +6,9 @@
     <description>Alfi&#39;s Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    
+
+    
     <lastBuildDate>Wed, 22 May 2024 15:28:39 +0200</lastBuildDate>
     
     <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
@@ -39,6 +42,15 @@
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;All my projects I actually work on. And maybe some more, I still don&amp;rsquo;t what what the content are gonna be, but things can still change 😊.&lt;/p&gt;
+&lt;h2 id=&#34;who-are-you-&#34; &gt;
+&lt;div&gt;
+    &lt;a href=&#34;#who-are-you-&#34;&gt;
+        #
+    &lt;/a&gt;
+    &lt;em&gt;Who are you ?&lt;/em&gt;
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m a CS student and during my free time, when i&amp;rsquo;m not playing on &lt;a href=&#34;https://minefield.fr&#34;&gt;Minefield.fr&lt;/a&gt;, watching series 📹, making music 🎸, or skating 🛹, i&amp;rsquo;m working on differents projects that is fun and are able to teach me more about IT.&lt;/p&gt;
 &lt;h2 id=&#34;what-project-are-you-working-on-&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#what-project-are-you-working-on-&#34;&gt;
@@ -47,7 +59,7 @@
     &lt;em&gt;What project are you working on ?&lt;/em&gt;
 &lt;/div&gt;
 &lt;/h2&gt;
-&lt;p&gt;I possibly have ADHD so I have a lot of project on going, none of &amp;rsquo;em are finished.&lt;/p&gt;
+&lt;p&gt;I have ADHD so I have a lot of project on going, none of &amp;rsquo;em are finished.&lt;/p&gt;
 &lt;p&gt;HOWERVER ! Here is a not exhaustive list of my projects :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Minecraft server ⛏&lt;/li&gt;

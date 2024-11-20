@@ -6,6 +6,9 @@
     <description>Lab d&#39;Alfi (Github)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr</language>
+    
+
+    
     <lastBuildDate>Wed, 22 May 2024 15:28:18 +0200</lastBuildDate>
     
     <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
@@ -28,9 +31,9 @@
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Dans un premier temps, rendez-vous sur Github et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;https://afidalgo.fr/posts/host-github/new-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;http://localhost:1313/posts/host_github/new-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une nouvelle page apparaît ensuite, votre repo doit avoir le nom &lt;em&gt;username&lt;/em&gt;.github.io, faite également en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;https://afidalgo.fr/posts/host-github/name-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;http://localhost:1313/posts/host_github/name-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;À présent, il faut push votre dossier sur lequel vous avez durement travaillé.&lt;/p&gt;
 &lt;h2 id=&#34;mise-en-ligne-du-site&#34; &gt;
 &lt;div&gt;
@@ -42,7 +45,7 @@
 &lt;/h2&gt;
 &lt;p&gt;Une fois votre repo créé et vos fichier uploadés, il est temps de publier votre site.&lt;/p&gt;
 &lt;p&gt;Dans les paramètres, rendez-vous dans la partie &lt;em&gt;pages&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;https://afidalgo.fr/posts/host-github/settings-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;http://localhost:1313/posts/host_github/settings-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dans la partie &lt;strong&gt;Build and deployment&lt;/strong&gt; sélectionnez la &lt;em&gt;Source&lt;/em&gt;, qui est:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;soit &lt;em&gt;GitHub Actions&lt;/em&gt;&lt;/li&gt;
@@ -50,7 +53,7 @@
 &lt;/ul&gt;
 &lt;p&gt;À vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la deuxième option.&lt;/p&gt;
 &lt;p&gt;Sélectionnez également la &lt;em&gt;Branch&lt;/em&gt; de votre repo et sauvegardez. Dans quelques instant, un message vous disant que votre site est publié devrait apparaître.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host-github/site_published.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;http://localhost:1313/posts/host_github/site_published.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !&lt;/p&gt;
 &lt;h2 id=&#34;nom-de-domaine-personnalisé&#34; &gt;
 &lt;div&gt;
@@ -73,7 +76,7 @@
 &lt;/div&gt;
 &lt;/h3&gt;
 &lt;p&gt;Avant tout, il est recommandé de renseigner votre nom de domaine avant de procéder aux divers ajouts. Une fois renseigner, cliquez sur &lt;em&gt;Save&lt;/em&gt; et attendez quelques secondes que la vérification DNS s&amp;rsquo;effectue.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host-github/subdomain.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;http://localhost:1313/posts/host_github/subdomain.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;configurer-la-résolution-de-nom&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#configurer-la-r%c3%a9solution-de-nom&#34;&gt;
@@ -92,7 +95,7 @@
 &lt;p&gt;Définissez en cible les serveurs de GitHub (plusieurs sont possibles, mais un seul suffis)&lt;/p&gt;
 &lt;p&gt;2.1. Laissez le sous domaine vide&lt;/p&gt;
 &lt;p&gt;2.2. Définissez la cible comme &lt;code&gt;185.199.108.153&lt;/code&gt;
-&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host-github/zone-A.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;http://localhost:1313/posts/host_github/zone-A.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Ajouter un &lt;strong&gt;CNAME&lt;/strong&gt; (similaire au champ A, mais permet de définir un nom alternatif)&lt;/p&gt;
@@ -100,11 +103,11 @@
 &lt;p&gt;3.2. Définissez la cible comme &lt;code&gt;pseudogit.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host-github/CNAME.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;http://localhost:1313/posts/host_github/CNAME.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et si vous retournez sur GitHub vous devrez avoir un message tout en haut de la page vous précisant que votre site est bien publié et fonctionne avec le nom de domaine affilié.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site web publié&#34; src=&#34;https://afidalgo.fr/posts/host-github/published2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site web publié&#34; src=&#34;http://localhost:1313/posts/host_github/published2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà, votre site est publié avec un nom de domaine personnalisé, le tout gratuitement !&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;bravo vous êtes sur internet&#34; src=&#34;https://afidalgo.fr/posts/host-github/bravo.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;bravo vous êtes sur internet&#34; src=&#34;http://localhost:1313/posts/host_github/bravo.gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;À bientôt pour de nouvelles aventures sur les internets 🤓 !&lt;/p&gt;</description>
     </item>
     
