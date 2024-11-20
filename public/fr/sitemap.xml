@@ -2,143 +2,143 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-        <loc>http://localhost:1313/categories/</loc>
+        <loc>https://afidalgo.fr/categories/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/categories/"
+          href="https://afidalgo.fr/en/categories/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/categories/"
+          href="https://afidalgo.fr/categories/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/crafty/</loc>
+        <loc>https://afidalgo.fr/tags/crafty/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/docker/</loc>
+        <loc>https://afidalgo.fr/tags/docker/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/</loc>
+        <loc>https://afidalgo.fr/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/"
+          href="https://afidalgo.fr/en/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/"
+          href="https://afidalgo.fr/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/minecraft/</loc>
+        <loc>https://afidalgo.fr/tags/minecraft/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/posts/</loc>
+        <loc>https://afidalgo.fr/posts/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/posts/"
+          href="https://afidalgo.fr/en/posts/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/posts/"
+          href="https://afidalgo.fr/posts/"
         />
       </url><url>
-        <loc>http://localhost:1313/categories/projets/</loc>
+        <loc>https://afidalgo.fr/categories/projets/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/</loc>
+        <loc>https://afidalgo.fr/tags/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/"
+          href="https://afidalgo.fr/en/tags/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/tags/"
+          href="https://afidalgo.fr/tags/"
         />
       </url><url>
-        <loc>http://localhost:1313/posts/project/crafty/</loc>
+        <loc>https://afidalgo.fr/posts/project/crafty/</loc>
         <lastmod>2024-11-19T16:05:12+01:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/posts/cesi/pfe/pfe_part1/</loc>
+        <loc>https://afidalgo.fr/posts/cesi/pfe/pfe_part1/</loc>
         <lastmod>2024-05-24T23:38:17+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/categories/cesi/</loc>
+        <loc>https://afidalgo.fr/categories/cesi/</loc>
         <lastmod>2024-05-24T23:38:17+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/pfe/</loc>
+        <loc>https://afidalgo.fr/tags/pfe/</loc>
         <lastmod>2024-05-24T23:38:17+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/posts/host_github/host-son-site-sur-github/</loc>
+        <loc>https://afidalgo.fr/posts/host_github/host-son-site-sur-github/</loc>
         <lastmod>2024-05-22T15:28:18+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/github/</loc>
+        <loc>https://afidalgo.fr/tags/github/</loc>
         <lastmod>2024-05-22T15:28:18+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/categories/web/</loc>
+        <loc>https://afidalgo.fr/categories/web/</loc>
         <lastmod>2024-05-22T15:28:18+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/tags/website/</loc>
+        <loc>https://afidalgo.fr/tags/website/</loc>
         <lastmod>2024-05-22T15:28:18+02:00</lastmod>
       </url><url>
-        <loc>http://localhost:1313/posts/first-post/</loc>
+        <loc>https://afidalgo.fr/posts/first-post/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/posts/first-post/"
+          href="https://afidalgo.fr/en/posts/first-post/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/posts/first-post/"
+          href="https://afidalgo.fr/posts/first-post/"
         />
       </url><url>
-        <loc>http://localhost:1313/tags/hello-world/</loc>
+        <loc>https://afidalgo.fr/tags/hello-world/</loc>
         <lastmod>2024-05-20T18:00:24+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/tags/hello-world/"
+          href="https://afidalgo.fr/en/tags/hello-world/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/tags/hello-world/"
+          href="https://afidalgo.fr/tags/hello-world/"
         />
       </url><url>
-        <loc>http://localhost:1313/about/</loc>
+        <loc>https://afidalgo.fr/about/</loc>
         <lastmod>2024-05-20T18:00:01+02:00</lastmod>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/about/"
+          href="https://afidalgo.fr/en/about/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/about/"
+          href="https://afidalgo.fr/about/"
         />
       </url><url>
-        <loc>http://localhost:1313/authors/</loc>
+        <loc>https://afidalgo.fr/authors/</loc>
         <xhtml:link
           rel="alternate"
           hreflang="en"
-          href="http://localhost:1313/en/authors/"
+          href="https://afidalgo.fr/en/authors/"
         />
         <xhtml:link
           rel="alternate"
           hreflang="fr"
-          href="http://localhost:1313/authors/"
+          href="https://afidalgo.fr/authors/"
         />
       </url>
 </urlset>

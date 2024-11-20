@@ -94,7 +94,7 @@ J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de chan
 &lt;p&gt;On va globalement pas trop toucher à ce fichier, qui est bien dans l&amp;rsquo;ensemble. On peut donc lancer docker avec la commande: &lt;code&gt;docker-compose up -d &amp;amp;&amp;amp; docker-compose logs -f&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Vu que crafty est bien fait, l&amp;rsquo;installation va se faire toute seule et prend normalement que quelques secondes&lt;/p&gt;
 &lt;p&gt;On peut d&amp;rsquo;ailleurs voir sur la capture suivante l&amp;rsquo;installation s&amp;rsquo;effectuer:
-&lt;img alt=&#34;installation de crafty à l&amp;rsquo;aide de docker&#34; src=&#34;http://localhost:1313/posts/images/crafty/docker1.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;installation de crafty à l&amp;rsquo;aide de docker&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/docker1.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;interface-de-crafty&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#interface-de-crafty&#34;&gt;
@@ -115,19 +115,19 @@ J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de chan
 Crafty est accessible via &lt;code&gt;localhost&lt;/code&gt;, &lt;code&gt;127.0.0.1&lt;/code&gt; ou l&amp;rsquo;&lt;code&gt;ip de la machine&lt;/code&gt;. Mais toujours avec &lt;strong&gt;https://&lt;/strong&gt; devant.
 Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://127.0.0.1:8443/&lt;/code&gt;, mais en temps normal, je rentre l&amp;rsquo;adresse ip du serveur où est hébergé crafty.&lt;/p&gt;
 &lt;p&gt;On se retrouve donc face à set interface:
-&lt;img alt=&#34;page de connexion à crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/crafty_ui.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;page de connexion à crafty&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/crafty_ui.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pour une première connexion, il faut utiliser le username &lt;code&gt;admin&lt;/code&gt; et le &lt;code&gt;mot de passe&lt;/code&gt; générer dans un fichier situer ici : &lt;code&gt;app/config/default-creds.txt&lt;/code&gt; de façon général. Mais bon, vu que je trouvais pas j&amp;rsquo;ai fini par lancé une recherche afin de trouver le fichier, qui finalement était pas si loin que ça:
-&lt;img alt=&#34;mot de passe de connexion session admin&#34; src=&#34;http://localhost:1313/posts/images/crafty/passwd.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;mot de passe de connexion session admin&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/passwd.png&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;À chaque fois que j&amp;rsquo;ai essayé d&amp;rsquo;accèder au compte admin pour une première connexion, j&amp;rsquo;ai TOUJOURS un message d&amp;rsquo;erreur où la connexion est impossible. Je sais pas si c&amp;rsquo;est moi qui suis maudit ou si c&amp;rsquo;est buggé 😮‍💨.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Cette fois-ci j&amp;rsquo;avais un petit peu d&amp;rsquo;espoir que ça fonctionne, mais comme à chaque installation, j&amp;rsquo;ai une erreur &lt;code&gt;Incorrect username or password&lt;/code&gt;. Donc on va utiliser la méthode &lt;code&gt;Forgot Password&lt;/code&gt; qui va activer un compte temporaire qui nous pemettra de définir le mot de passe de notre choix pour le compte &lt;code&gt;admin&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Lorsque l&amp;rsquo;on clic sur le boutton &lt;code&gt;Forgot Password&lt;/code&gt;, le compte &lt;code&gt;Lockout&lt;/code&gt; s&amp;rsquo;active pendant 1H avec un mot de passe temporaire, trouvable dans les logs du container:
 &lt;code&gt;docker logs {id container}&lt;/code&gt;
-&lt;img alt=&#34;login et password du compte auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/lockout.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;login et password du compte auti-lockout&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/lockout.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une fois ces identifiants rentré, cela nous donne donc accès à l&amp;rsquo;interface permettant de modifier le mot de passe admin.&lt;/p&gt;
 &lt;p&gt;Voici à quoi elle ressemble:
-&lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;dashboard&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#dashboard&#34;&gt;
@@ -139,7 +139,7 @@ Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://1
 &lt;p&gt;Maintenant qu&amp;rsquo;on est connecté, nous voici face à la page d&amp;rsquo;accueil. C&amp;rsquo;est le dashboard.
 D&amp;rsquo;ici on peut accéder aux paramètres et créer des serveurs.
 Si des serveurs sont crées, ils s&amp;rsquo;afficheront ici.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;dashboard crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/interface_crafty.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;dashboard crafty&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/interface_crafty.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;création-dun-serveur&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#cr%c3%a9ation-dun-serveur&#34;&gt;
@@ -152,7 +152,7 @@ Si des serveurs sont crées, ils s&amp;rsquo;afficheront ici.&lt;/p&gt;
 Choix à définir en sélectionnant Minecraft-Bedrock ou Minecraft-Java au dessus du panneau &lt;strong&gt;Create New Server&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Voici l&amp;rsquo;outil qui permet de créer des serveurs. Il permet de sélectionner plusieurs options personnalisable pour notre serveur.
-&lt;img alt=&#34;créer un nouveau serveur&#34; src=&#34;http://localhost:1313/posts/images/crafty/server-builder2.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;créer un nouveau serveur&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/server-builder2.png&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Server Type&lt;/strong&gt;: Permet de choisir entre soit la configuration du serveur minecraft ou d&amp;rsquo;un serveur proxie.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Server Select&lt;/strong&gt;: au fil des années, plusieurs type de serveur se sont créer, &lt;em&gt;vanilla&lt;/em&gt;, &lt;em&gt;paper&lt;/em&gt;, &lt;em&gt;fabric&lt;/em&gt;, &lt;em&gt;folia&lt;/em&gt;, &lt;em&gt;forge-installer&lt;/em&gt; et &lt;em&gt;purpur&lt;/em&gt;. (Paper est recommandé si l&amp;rsquo;installation de plugins est souhaité)&lt;/li&gt;
@@ -173,7 +173,7 @@ Choix à définir en sélectionnant Minecraft-Bedrock ou Minecraft-Java au dessu
 &lt;/h3&gt;
 &lt;p&gt;On peut maintenant démarrer le serveur en cliquant sur le bouton &amp;lsquo;&lt;strong&gt;Start&lt;/strong&gt;&amp;rsquo; ou depuis le dashboard en appuyant sur le petit triangle.
 Si c&amp;rsquo;est le premier démarrage du serveur, il va demander d&amp;rsquo;accepter les &lt;a href=&#34;https://www.minecraft.net/fr-fr/eula&#34;&gt;EULA de Minecraft&lt;/a&gt;.
-&lt;img alt=&#34;EULA Minecraft&#34; src=&#34;http://localhost:1313/posts/images/crafty/minecraft-eula.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;EULA Minecraft&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/minecraft-eula.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une fois les EULA acceptée on peut une nouvelle fois lancer le serveur et s&amp;rsquo;assurer de bien avoir ouvert le port défini plus haut qui est le port de connexion Minecraft et qui permettra à vos amis de se connecter à votre serveur.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Et voilà, vous savez à présent installer Crafty Controller avec Docker et lancer votre premier serveur Minecraft !&lt;/p&gt;</description>

@@ -94,7 +94,7 @@ J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de chan
 &lt;p&gt;On va globalement pas trop toucher à ce fichier, qui est bien dans l&amp;rsquo;ensemble. On peut donc lancer docker avec la commande: &lt;code&gt;docker-compose up -d &amp;amp;&amp;amp; docker-compose logs -f&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Vu que crafty est bien fait, l&amp;rsquo;installation va se faire toute seule et prend normalement que quelques secondes&lt;/p&gt;
 &lt;p&gt;On peut d&amp;rsquo;ailleurs voir sur la capture suivante l&amp;rsquo;installation s&amp;rsquo;effectuer:
-&lt;img alt=&#34;installation de crafty à l&amp;rsquo;aide de docker&#34; src=&#34;http://localhost:1313/posts/images/crafty/docker1.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;installation de crafty à l&amp;rsquo;aide de docker&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/docker1.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;interface-de-crafty&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#interface-de-crafty&#34;&gt;
@@ -115,19 +115,19 @@ J&amp;rsquo;ai déjà eu des soucis d&amp;rsquo;horloge en ayant oublié de chan
 Crafty est accessible via &lt;code&gt;localhost&lt;/code&gt;, &lt;code&gt;127.0.0.1&lt;/code&gt; ou l&amp;rsquo;&lt;code&gt;ip de la machine&lt;/code&gt;. Mais toujours avec &lt;strong&gt;https://&lt;/strong&gt; devant.
 Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://127.0.0.1:8443/&lt;/code&gt;, mais en temps normal, je rentre l&amp;rsquo;adresse ip du serveur où est hébergé crafty.&lt;/p&gt;
 &lt;p&gt;On se retrouve donc face à set interface:
-&lt;img alt=&#34;page de connexion à crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/crafty_ui.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;page de connexion à crafty&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/crafty_ui.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Pour une première connexion, il faut utiliser le username &lt;code&gt;admin&lt;/code&gt; et le &lt;code&gt;mot de passe&lt;/code&gt; générer dans un fichier situer ici : &lt;code&gt;app/config/default-creds.txt&lt;/code&gt; de façon général. Mais bon, vu que je trouvais pas j&amp;rsquo;ai fini par lancé une recherche afin de trouver le fichier, qui finalement était pas si loin que ça:
-&lt;img alt=&#34;mot de passe de connexion session admin&#34; src=&#34;http://localhost:1313/posts/images/crafty/passwd.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;mot de passe de connexion session admin&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/passwd.png&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;À chaque fois que j&amp;rsquo;ai essayé d&amp;rsquo;accèder au compte admin pour une première connexion, j&amp;rsquo;ai TOUJOURS un message d&amp;rsquo;erreur où la connexion est impossible. Je sais pas si c&amp;rsquo;est moi qui suis maudit ou si c&amp;rsquo;est buggé 😮‍💨.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Cette fois-ci j&amp;rsquo;avais un petit peu d&amp;rsquo;espoir que ça fonctionne, mais comme à chaque installation, j&amp;rsquo;ai une erreur &lt;code&gt;Incorrect username or password&lt;/code&gt;. Donc on va utiliser la méthode &lt;code&gt;Forgot Password&lt;/code&gt; qui va activer un compte temporaire qui nous pemettra de définir le mot de passe de notre choix pour le compte &lt;code&gt;admin&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Lorsque l&amp;rsquo;on clic sur le boutton &lt;code&gt;Forgot Password&lt;/code&gt;, le compte &lt;code&gt;Lockout&lt;/code&gt; s&amp;rsquo;active pendant 1H avec un mot de passe temporaire, trouvable dans les logs du container:
 &lt;code&gt;docker logs {id container}&lt;/code&gt;
-&lt;img alt=&#34;login et password du compte auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/lockout.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;login et password du compte auti-lockout&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/lockout.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une fois ces identifiants rentré, cela nous donne donc accès à l&amp;rsquo;interface permettant de modifier le mot de passe admin.&lt;/p&gt;
 &lt;p&gt;Voici à quoi elle ressemble:
-&lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;http://localhost:1313/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;page de gestion auti-lockout&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/ath_lockout.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;dashboard&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#dashboard&#34;&gt;
@@ -139,7 +139,7 @@ Pour cet exemple j&amp;rsquo;y accède de avec la manière &lt;code&gt;https://1
 &lt;p&gt;Maintenant qu&amp;rsquo;on est connecté, nous voici face à la page d&amp;rsquo;accueil. C&amp;rsquo;est le dashboard.
 D&amp;rsquo;ici on peut accéder aux paramètres et créer des serveurs.
 Si des serveurs sont crées, ils s&amp;rsquo;afficheront ici.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;dashboard crafty&#34; src=&#34;http://localhost:1313/posts/images/crafty/interface_crafty.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;dashboard crafty&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/interface_crafty.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;création-dun-serveur&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#cr%c3%a9ation-dun-serveur&#34;&gt;
@@ -152,7 +152,7 @@ Si des serveurs sont crées, ils s&amp;rsquo;afficheront ici.&lt;/p&gt;
 Choix à définir en sélectionnant Minecraft-Bedrock ou Minecraft-Java au dessus du panneau &lt;strong&gt;Create New Server&lt;/strong&gt;.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Voici l&amp;rsquo;outil qui permet de créer des serveurs. Il permet de sélectionner plusieurs options personnalisable pour notre serveur.
-&lt;img alt=&#34;créer un nouveau serveur&#34; src=&#34;http://localhost:1313/posts/images/crafty/server-builder2.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;créer un nouveau serveur&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/server-builder2.png&#34;&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Server Type&lt;/strong&gt;: Permet de choisir entre soit la configuration du serveur minecraft ou d&amp;rsquo;un serveur proxie.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Server Select&lt;/strong&gt;: au fil des années, plusieurs type de serveur se sont créer, &lt;em&gt;vanilla&lt;/em&gt;, &lt;em&gt;paper&lt;/em&gt;, &lt;em&gt;fabric&lt;/em&gt;, &lt;em&gt;folia&lt;/em&gt;, &lt;em&gt;forge-installer&lt;/em&gt; et &lt;em&gt;purpur&lt;/em&gt;. (Paper est recommandé si l&amp;rsquo;installation de plugins est souhaité)&lt;/li&gt;
@@ -173,7 +173,7 @@ Choix à définir en sélectionnant Minecraft-Bedrock ou Minecraft-Java au dessu
 &lt;/h3&gt;
 &lt;p&gt;On peut maintenant démarrer le serveur en cliquant sur le bouton &amp;lsquo;&lt;strong&gt;Start&lt;/strong&gt;&amp;rsquo; ou depuis le dashboard en appuyant sur le petit triangle.
 Si c&amp;rsquo;est le premier démarrage du serveur, il va demander d&amp;rsquo;accepter les &lt;a href=&#34;https://www.minecraft.net/fr-fr/eula&#34;&gt;EULA de Minecraft&lt;/a&gt;.
-&lt;img alt=&#34;EULA Minecraft&#34; src=&#34;http://localhost:1313/posts/images/crafty/minecraft-eula.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;EULA Minecraft&#34; src=&#34;https://afidalgo.fr/posts/images/crafty/minecraft-eula.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une fois les EULA acceptée on peut une nouvelle fois lancer le serveur et s&amp;rsquo;assurer de bien avoir ouvert le port défini plus haut qui est le port de connexion Minecraft et qui permettra à vos amis de se connecter à votre serveur.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Et voilà, vous savez à présent installer Crafty Controller avec Docker et lancer votre premier serveur Minecraft !&lt;/p&gt;</description>
@@ -257,10 +257,10 @@ Projet qui doit être réalisé au sein de l&amp;rsquo;entreprise où je me trou
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Rien de bien compliqué. Si vous avez un full accès à votre GLPI, rendez vous dans &lt;em&gt;Configuration (1)&lt;/em&gt; &amp;gt; &lt;em&gt;Général (2)&lt;/em&gt; &amp;gt; &lt;em&gt;API (3)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer l&amp;rsquo;API Rest (4)&lt;/em&gt; &amp;gt; &lt;em&gt;Activer la connexion avec identifiants (5)&lt;/em&gt; et enfin cliquez sur &lt;em&gt;Sauvegarder&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/activation_api2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/activation_api2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Voilà, donc maintenant l&amp;rsquo;API est activé, il faut ensuite rajouter un nouveau client de l&amp;rsquo;API, c&amp;rsquo;est le bouton qui se trouve juste en dessous.&lt;/p&gt;
 &lt;p&gt;Donner un nom (1), ensuite définir la plage d&amp;rsquo;adresse IP qui sera utiliser par l&amp;rsquo;API, ici, c&amp;rsquo;est le range du Docker (2) et pour finir, faut s&amp;rsquo;assurer que la case &amp;ldquo;&lt;em&gt;Regénérer&lt;/em&gt;&amp;rdquo; est cochée, ce qui permettra d&amp;rsquo;avoir un jeton, on en aura besoin pour plus tard.
-&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/client_api.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;activer l&amp;rsquo;api&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/client_api.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;la-documentation&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#la-documentation&#34;&gt;
@@ -281,7 +281,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Postman, ça ressemble à ça :
-&lt;img alt=&#34;postman&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/postman.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;En rouge, c&amp;rsquo;est les requêtes HTTP. Celles qui nous intéressent sont :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt; qui a pour but d&amp;rsquo;aller chercher une page ou de la donnée.&lt;/li&gt;
@@ -314,12 +314,12 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;p&gt;Pour récupérer ce token, faut aller dans &lt;em&gt;Administration&lt;/em&gt; &amp;gt; &lt;em&gt;Utilisateurs&lt;/em&gt; &amp;gt; &lt;em&gt;{username}&lt;/em&gt; et, tout en bas de la page, dans la section &lt;strong&gt;Clef d&amp;rsquo;accès distant&lt;/strong&gt; doit apparaître le &lt;em&gt;Jeton d&amp;rsquo;API&lt;/em&gt;. S&amp;rsquo;il n&amp;rsquo;est pas dispo, coche juste la case &lt;em&gt;Regénéré&lt;/em&gt; à droite et clique sur &lt;em&gt;Sauvegarder&lt;/em&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;On copie la clé et on retourne sur Postman.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;postman init session&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_initsession.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;postman init session&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/postman_initsession.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Faut aller dans la section &lt;em&gt;Authorization&lt;/em&gt; et dans le menu déroulant &lt;strong&gt;Type&lt;/strong&gt; chercher &lt;em&gt;&lt;strong&gt;API KEY&lt;/strong&gt;&lt;/em&gt;. Pour la Key, faut donc écrire &lt;em&gt;user_token&lt;/em&gt; et dans Value, coller la clé copiée juste avant.&lt;/p&gt;
 &lt;p&gt;Ensuite dans &lt;em&gt;&lt;strong&gt;Params&lt;/strong&gt;&lt;/em&gt; rajoute l&amp;rsquo;&lt;strong&gt;app_token&lt;/strong&gt; généré plus haut en activant l&amp;rsquo;API.&lt;/p&gt;
 &lt;p&gt;Et si tout est bon tu devrais dois un token de session qui apparaît dans le &lt;em&gt;Body&lt;/em&gt; juste en dessous et qui se régénère à chaque exécusion de la commande.&lt;/p&gt;
 &lt;p&gt;Comme ceci:
-&lt;img alt=&#34;postman session token&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_session_token.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman session token&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/postman_session_token.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ce token va être utile pour les autres commandes que je vais devoir exécuter, donc faut le garder dans un coin.&lt;/p&gt;
 &lt;h3 id=&#34;lister-les-tous-les-ordis&#34; &gt;
 &lt;div&gt;
@@ -339,7 +339,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;li&gt;Session_token : c&amp;rsquo;est pas indiqué dans la doc, mais j&amp;rsquo;ai un message d&amp;rsquo;erreur si j&amp;rsquo;le mets pas&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Après avoir ajouté tout ça, et cliqué sur &lt;strong&gt;Send&lt;/strong&gt; j&amp;rsquo;obtiens donc un résultat, que voici :
-&lt;img alt=&#34;postman list d&amp;rsquo;items&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_get_items.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;postman list d&amp;rsquo;items&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/postman_get_items.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Okay ! Parfait, ça fonctionne ! On va pouvoir passer à la suite, c-à-d &lt;em&gt;ajouter&lt;/em&gt; un nouvel ordinateur dans la liste.&lt;/p&gt;
 &lt;h3 id=&#34;ajouter-un-nouvel-ordinateur&#34; &gt;
 &lt;div&gt;
@@ -361,9 +361,9 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ce qui m&amp;rsquo;a rendu ce résultat :
-&lt;img alt=&#34;pc créé&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/postman_creation_pc.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc créé&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/postman_creation_pc.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Donc maintenant il ne reste plus qu&amp;rsquo;à vérifier qu&amp;rsquo;il est bien présent dans la liste des pc de GLPI.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pc créé dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/GLPI_pc.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Ça y est ! Notre premier objet a été créé dans GLPI grâce à l&amp;rsquo;API !!&lt;/p&gt;
 &lt;h3 id=&#34;modifier-un-élément&#34; &gt;
 &lt;div&gt;
@@ -383,9 +383,9 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Une fois la commande exécutée, on devrait avoir un message comme suivant :
-&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc_update.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/GLPI_pc_update.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et pour vérifier que la commande a bien été prise en compte, il suffit de se rendre dans GLPI.
-&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;http://localhost:1313/posts/images/PFE/part1/GLPI_pc_update2.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;pc modifié dans GLPI&#34; src=&#34;https://afidalgo.fr/posts/images/PFE/part1/GLPI_pc_update2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà ! Je sais à présent :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Me connecter à l&amp;rsquo;API&lt;/li&gt;
@@ -411,9 +411,9 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/div&gt;
 &lt;/h2&gt;
 &lt;p&gt;Dans un premier temps, rendez-vous sur Github et au niveau de votre photo de profil, cliquer sur le + et créez un nouveau repo.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;http://localhost:1313/posts/host_github/new-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;new-repo&#34; src=&#34;https://afidalgo.fr/posts/host_github/new-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Une nouvelle page apparaît ensuite, votre repo doit avoir le nom &lt;em&gt;username&lt;/em&gt;.github.io, faite également en sorte qu&amp;rsquo;il soit &lt;em&gt;public&lt;/em&gt;. Vous pouvez donner une description à votre repository, mais ça n&amp;rsquo;est pas obligatoire.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;http://localhost:1313/posts/host_github/name-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;name-repo&#34; src=&#34;https://afidalgo.fr/posts/host_github/name-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;À présent, il faut push votre dossier sur lequel vous avez durement travaillé.&lt;/p&gt;
 &lt;h2 id=&#34;mise-en-ligne-du-site&#34; &gt;
 &lt;div&gt;
@@ -425,7 +425,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/h2&gt;
 &lt;p&gt;Une fois votre repo créé et vos fichier uploadés, il est temps de publier votre site.&lt;/p&gt;
 &lt;p&gt;Dans les paramètres, rendez-vous dans la partie &lt;em&gt;pages&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;http://localhost:1313/posts/host_github/settings-repo.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;pages-github&#34; src=&#34;https://afidalgo.fr/posts/host_github/settings-repo.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Dans la partie &lt;strong&gt;Build and deployment&lt;/strong&gt; sélectionnez la &lt;em&gt;Source&lt;/em&gt;, qui est:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;soit &lt;em&gt;GitHub Actions&lt;/em&gt;&lt;/li&gt;
@@ -433,7 +433,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/ul&gt;
 &lt;p&gt;À vous de sélectionner le bon en fonction de votre configuration, mais dans la majorité des cas ça sera la deuxième option.&lt;/p&gt;
 &lt;p&gt;Sélectionnez également la &lt;em&gt;Branch&lt;/em&gt; de votre repo et sauvegardez. Dans quelques instant, un message vous disant que votre site est publié devrait apparaître.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;http://localhost:1313/posts/host_github/site_published.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host_github/site_published.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà ! Votre site est publié ! Vous pouvez le partager au monde entier !&lt;/p&gt;
 &lt;h2 id=&#34;nom-de-domaine-personnalisé&#34; &gt;
 &lt;div&gt;
@@ -456,7 +456,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;/div&gt;
 &lt;/h3&gt;
 &lt;p&gt;Avant tout, il est recommandé de renseigner votre nom de domaine avant de procéder aux divers ajouts. Une fois renseigner, cliquez sur &lt;em&gt;Save&lt;/em&gt; et attendez quelques secondes que la vérification DNS s&amp;rsquo;effectue.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;http://localhost:1313/posts/host_github/subdomain.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site-published&#34; src=&#34;https://afidalgo.fr/posts/host_github/subdomain.png&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;configurer-la-résolution-de-nom&#34; &gt;
 &lt;div&gt;
     &lt;a href=&#34;#configurer-la-r%c3%a9solution-de-nom&#34;&gt;
@@ -475,7 +475,7 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;p&gt;Définissez en cible les serveurs de GitHub (plusieurs sont possibles, mais un seul suffis)&lt;/p&gt;
 &lt;p&gt;2.1. Laissez le sous domaine vide&lt;/p&gt;
 &lt;p&gt;2.2. Définissez la cible comme &lt;code&gt;185.199.108.153&lt;/code&gt;
-&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;http://localhost:1313/posts/host_github/zone-A.png&#34;&gt;&lt;/p&gt;
+&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host_github/zone-A.png&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Ajouter un &lt;strong&gt;CNAME&lt;/strong&gt; (similaire au champ A, mais permet de définir un nom alternatif)&lt;/p&gt;
@@ -483,11 +483,11 @@ De retour sur la section consacrée à l&amp;rsquo;API, il y a une ligne appelé
 &lt;p&gt;3.2. Définissez la cible comme &lt;code&gt;pseudogit.github.io&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;http://localhost:1313/posts/host_github/CNAME.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;ajout d&amp;rsquo;une zone&#34; src=&#34;https://afidalgo.fr/posts/host_github/CNAME.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et si vous retournez sur GitHub vous devrez avoir un message tout en haut de la page vous précisant que votre site est bien publié et fonctionne avec le nom de domaine affilié.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;site web publié&#34; src=&#34;http://localhost:1313/posts/host_github/published2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;site web publié&#34; src=&#34;https://afidalgo.fr/posts/host_github/published2.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Et voilà, votre site est publié avec un nom de domaine personnalisé, le tout gratuitement !&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;bravo vous êtes sur internet&#34; src=&#34;http://localhost:1313/posts/host_github/bravo.gif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;bravo vous êtes sur internet&#34; src=&#34;https://afidalgo.fr/posts/host_github/bravo.gif&#34;&gt;&lt;/p&gt;
 &lt;p&gt;À bientôt pour de nouvelles aventures sur les internets 🤓 !&lt;/p&gt;</description>
     </item>
     
